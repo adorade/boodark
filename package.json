@@ -1,0 +1,36 @@
+{
+  "name": "boodark",
+  "version": "1.0.0",
+  "description": "Bootstrap Dark theme for phpMyAdmin",
+  "repository": "https://github.com/adorade/boodark.git",
+  "author": "Adorade",
+  "scripts": {
+    "postinstall": "yarn run build",
+    "build": "yarn run css-compile && yarn run css-prefix && yarn run css-rtl",
+    "css-compile": "sass themes/boodark/scss:themes/boodark/css --style=compressed",
+    "css-dev": "sass themes/boodark/scss:themes/boodark/css --style=expanded --watch",
+    "css-lint": "stylelint themes/boodark/scss/*.scss",
+    "css-prefix": "postcss themes/boodark/css/*.css --use autoprefixer --replace",
+    "css-rtl": "rtlcss -c .rtlcssrc.json themes/boodark/css/theme.css"
+  },
+  "dependencies": {
+    "@popperjs/core": "2.11.6",
+    "autoprefixer": "10.4.12",
+    "bootstrap": "5.1.3",
+    "postcss": "8.4.16",
+    "postcss-cli": "10.0.0",
+    "rtlcss": "4.0.0",
+    "sass": "1.54.9"
+  },
+  "devDependencies": {
+    "stylelint": "14.12.0",
+    "stylelint-config-recommended-scss": "7.0.0",
+    "stylelint-config-standard-scss": "5.0.0",
+    "stylelint-scss": "4.3.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT",
+  "private": true
+}

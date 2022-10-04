@@ -1,0 +1,25 @@
+# https://git-scm.com/docs/gitignore
+# Files to ignore
+.todo
+desktop.ini
+*_*.ico
+themes/boodark/scss/__debug.scss
+
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
+/.vscode/
+
+# Folders to ignore
+/archive/
+/node_modules/
