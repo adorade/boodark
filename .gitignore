@@ -18,8 +18,9 @@ themes/boodark/scss/__debug.scss
 *.sublime-workspace
 nbproject
 Thumbs.db
-/.vscode/
+.vscode
 
 # Folders to ignore
-/archive/
-/node_modules/
+archive
+node_modules
+build
