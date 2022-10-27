@@ -1504,6 +1504,7 @@ input#auto_increment_opt {
   padding: .3em 0;
 }
 
+// Column visibility
 .cRsz {
   position: absolute;
 }
@@ -1534,14 +1535,15 @@ input#auto_increment_opt {
 
 .tooltip {
   background: #333 !important;
-  opacity: .8 !important;
+  opacity: .9 !important;
   z-index: 9999;
   border: 1px solid $black !important;
   border-radius: .3em !important;
+  box-shadow: none !important;
   text-shadow: -1px -1px $black !important;
   font-size: .8em !important;
   font-weight: bold !important;
-  padding: 1px 3px !important;
+  padding: 3px 5px !important;
 
   * {
     background: none !important;
@@ -1556,24 +1558,25 @@ input#auto_increment_opt {
 }
 
 .coldrop {
-  background: url("../img/col_drop.png");
+  $svg-color: $pma-cyan;
+  background-image: escape-svg(url('data:image/svg+xml,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#{$svg-color}" d="m 13,6 -5,5 -5,-5 z"/></svg>'));
   cursor: pointer;
   height: 16px;
-  margin-top: .3em;
+  margin-top: .5em;
   width: 16px;
 
   &:hover {
-    background-color: #999;
+    background-color: $pma-component-hover-bg;
   }
 }
 
 .coldrop-hover {
-  background-color: #999;
+  background-color: $pma-component-hover-bg;
 }
 
 .cList {
-  background: #eee;
-  border: solid 1px #999;
+  background: $pma-component-bg;
+  border: 1px solid $pma-border-color;
   position: absolute;
   box-shadow: 0 .2em .5em #333;
   margin-left: 75%;
@@ -1586,7 +1589,7 @@ input#auto_increment_opt {
     padding-left: .2em;
 
     &:hover {
-      background: #ddd;
+      background: $pma-component-hover-bg;
       cursor: pointer;
     }
 
@@ -1597,8 +1600,8 @@ input#auto_increment_opt {
 }
 
 .showAllColBtn {
-  border-bottom: solid 1px #999;
-  border-top: solid 1px #999;
+  border-bottom: 1px solid $pma-border-color;
+  border-top: 1px solid $pma-border-color;
   cursor: pointer;
   font-size: .9em;
   font-weight: bold;
@@ -1606,7 +1609,7 @@ input#auto_increment_opt {
   text-align: center;
 
   &:hover {
-    background: #ddd;
+    background: $pma-component-hover-bg;
   }
 }
 
