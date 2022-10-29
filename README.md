@@ -22,22 +22,45 @@
 
 ## Installation
 
-1. Download latest [release](https://github.com/adorade/boodark/releases/download/v1.0.0/boodark-v1.0.0.zip)
+1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.0.1.zip)
 2. Extract the archive files
 3. Go to the phpMyAdmin files (C:\xampp\phpmyadmin for XAMPP) then go to the `themes` folder and add here the `boodark` folder
 4. Select `BooDark` theme on the home page
 
 ## Building
 
-1. Clone this repo locally: `git clone https://github.com/adorade/boodark`
-2. Compile `css` files from `scss`
+BooDark theme respects the folders structure of phpMyAdmin.
+
+```txt
+├── node_modules
+├── themes
+│   └── boodark
+│       ├── css
+│       ├── img
+│       ├── jquery
+│       ├── scss
+│       ├── screen.png
+│       └── theme.json
+├── package.json
+└── yarn.lock
+```
+
+To build the theme or customize it with your preferences you must have **Node**, **Yarn** and **Git** installed. Then follow step by step:
+
+1. Open your command-line and navigate to your projects folder
+2. Clone this repo locally: `git clone https://github.com/adorade/boodark .`
+3. Install project dependecies: `yarn install`
+4. Do any modifications you want
+5. Compile `scss` files to `css`
 
     ```sh
-    yarn install
+    # production, minified files
     yarn run build
+    # development
+    yarn run css-dev
     ```
 
-3. Theme files are in `themes/boodark`.
+6. Theme files are in `themes/boodark`.
 
 ## Bugs and feature requests
 
