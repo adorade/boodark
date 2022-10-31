@@ -1,3 +1,4 @@
+// stylelint-disable selector-not-notation
 // stylelint-disable at-rule-empty-line-before
 // stylelint-disable scss/at-extend-no-missing-placeholder
 // Forms
@@ -104,6 +105,17 @@ input {
         background-image: escape-svg($form-check-radio-checked-bg-image);
       }
     }
+  }
+
+  &[type=file]::file-selector-button {
+    @extend .btn-dark;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  &:hover:not(:disabled):not([readonly])::file-selector-button {
+    background-color: $pma-blue !important;
+    border-color: $pma-blue !important;
   }
 }
 
