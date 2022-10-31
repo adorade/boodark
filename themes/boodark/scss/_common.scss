@@ -1,3 +1,4 @@
+// stylelint-disable scss/at-extend-no-missing-placeholder
 // Common
 
 #page_content {
@@ -988,21 +989,22 @@ select.invalid_value,
   margin-bottom: 0;
   margin-left: auto;
   // Keep a little space on the sides of the text
-  padding: 5px;
-  width: 350px;
+  padding: $pma-ajax-spacer;
+  width: $pma-ajax-width;
   // If this is not kept at a high z-index, the jQueryUI modal dialogs (z-index: 1000) might hide this
   z-index: 1100;
   text-align: center;
   display: inline;
   left: 0;
   right: 0;
-  background-image: url("../img/ajax_clock_small.gif");
+  background-image: url("../img/ajax_clock_small.svg");
   background-repeat: no-repeat;
-  background-position: 2%;
-  border: 1px solid $pma-ajax-border-color;
-  background-color: $pma-ajax-bg;
+  background-position: $pma-ajax-spacer;
+  border: $alert-border-width solid transparent;
   border-radius: 5px;
-  box-shadow: 0 5px 90px $pma-ajax-shadow#888;
+  box-shadow: 0 5px 90px $pma-ajax-shadow;
+
+  @extend .alert-info;
 }
 
 #popup_background {
