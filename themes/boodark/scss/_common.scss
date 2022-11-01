@@ -1885,6 +1885,24 @@ table.show_create {
   }
 }
 
+#importFileTab {
+  width: fit-content;
+  border-radius: 0.25rem;
+  background-color: #212329;
+
+  .nav-item:first-child {
+    .nav-link {
+      border-radius: .25rem 0 0 .25rem;
+    }
+  }
+
+  .nav-item:last-child {
+    .nav-link {
+      border-radius: 0 .25rem .25rem 0;
+    }
+  }
+}
+
 // PMA drop-import style
 .pma_drop_handler {
   display: none;
