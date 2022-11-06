@@ -442,32 +442,6 @@ div#tablestatistics table {
   width: 100%;
 }
 
-.navbar-light {
-  .navbar-toggler {
-    color: $navbar-dark-color;
-    border-color: $navbar-dark-toggler-border-color;
-  }
-
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-dark-toggler-icon-bg);
-  }
-
-  .navbar-nav {
-    .nav-item.active {
-      color: $component-active-color;
-      background-color: $component-active-bg;
-    }
-
-    .nav-link {
-      color: rgba($body-color, .85);
-
-      &:hover {
-        color: rgba($body-color, .55);
-      }
-    }
-  }
-}
-
 #page_nav_icons {
   position: fixed;
   top: 0;
