@@ -982,22 +982,17 @@ select.invalid_value,
 
 .ajax_notification {
   // The notification needs to be shown on the top of the page
-  top: 0;
   position: fixed;
-  margin-top: 200px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  // Keep a little space on the sides of the text
-  padding: $pma-ajax-spacer;
-  width: $pma-ajax-width;
-  // If this is not kept at a high z-index, the jQueryUI modal dialogs (z-index: 1000) might hide this
-  z-index: 1100;
-  text-align: center;
-  display: inline;
+  top: 0;
   left: 0;
   right: 0;
-  background-image: url("../img/ajax_clock_small.svg");
+  display: inline;
+  z-index: 1100;
+  width: $pma-ajax-width;
+  padding: $pma-ajax-spacer;
+  margin: 200px auto 0;
+  text-align: center;
+  background-size: $pma-ajax-bg-zise;
   background-repeat: no-repeat;
   background-position: $pma-ajax-spacer;
   border: $alert-border-width solid transparent;
@@ -1005,6 +1000,7 @@ select.invalid_value,
   box-shadow: 0 5px 90px $pma-ajax-shadow;
 
   @extend .alert-info;
+  @extend .ic_ajax_spinner;
 }
 
 #popup_background {
@@ -1736,11 +1732,15 @@ div.navigation_separator {
   .edit_box_posting {
     background: $white url('../img/ajax_clock_small.gif') no-repeat right center;
     padding-right: 1.5em;
+    // background-size: $pma-ajax-bg-zise;
+    // @extend .ic_ajax_spinner;
   }
 
   .edit_area_loading {
     background: $white url("../img/ajax_clock_small.gif") no-repeat center;
     height: 10em;
+    // background-size: $pma-ajax-bg-zise;
+    // @extend .ic_ajax_spinner;
   }
 
   .goto_link {
@@ -1753,6 +1753,8 @@ div.navigation_separator {
 .saving_edited_data {
   background: url('../img/ajax_clock_small.gif') no-repeat left;
   padding-left: 20px;
+  // background-size: $pma-ajax-bg-zise;
+  // @extend .ic_ajax_spinner;
 }
 
 .relationalTable {
