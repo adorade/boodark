@@ -5,10 +5,6 @@
   margin: 0 .5em;
 }
 
-.data {
-  margin: 0 0 12px;
-}
-
 #navbarDropdown > img {
   display: none;
 }
@@ -135,11 +131,6 @@ div.null_div {
   }
 }
 
-button.mult_submit {
-  border: none;
-  background-color: transparent;
-}
-
 // marks table rows/cells if the db field is in a where condition
 .condition {
   border-color: $pma-cond-border-color !important;
@@ -232,14 +223,44 @@ td .icon {
 }
 
 #tablesForm {
-  input {
-    margin-top: .75rem;
+  input.checkall_box {
+    margin-top: .65rem;
   }
 
   select {
     display: inline-block;
     width: auto;
   }
+}
+
+// Server > Binary log
+#binlogTable {
+  td a {
+    text-decoration: none;
+  }
+}
+
+// Database > SQL Form
+#sqlqueryform {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  margin-top: 1rem;
+}
+
+// Database > Export table
+.export_table_select {
+  @extend .table-light;
+}
+
+// Database > Operations
+#formDatabaseComment {
+  display: block;
+  margin-top: 1rem;
+}
+
+// Table > Operations
+#moveTableForm {
+  margin-top: 1rem;
 }
 
 // message boxes: error, confirmation
@@ -447,7 +468,14 @@ div#tablestatistics table {
   top: 0;
   right: 0;
   z-index: 99;
-  padding: $breadcrumb-navbar-padding-y $breadcrumb-padding-x;
+  padding: $breadcrumb-navbar-padding;
+  background-color: $pma-body-bg;
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0;
+  }
 }
 
 #page_settings_icon {
@@ -855,15 +883,17 @@ div.sqlvalidate {
 }
 
 .result_query {
+  margin-top: 1em;
+
   .sqlOuter {
-    background: $pma-component-bg;
+    background: darken($pma-component-bg, 2%);
     text-align: left;
   }
 }
 
 #PMA_slidingMessage code.sql,
 div.sqlvalidate {
-  background: #e5e5e5;
+  background: darken($pma-component-bg, 2%);
 }
 
 textarea#partitiondefinition {
@@ -930,21 +960,6 @@ table {
   &#serverconnection_trg_local {
     float: left;
   }
-}
-
-// Validation error message styles
-input {
-  &[type=text].invalid_value,
-  &[type=password].invalid_value,
-  &[type=number].invalid_value,
-  &[type=date].invalid_value {
-    background: #fcc;
-  }
-}
-
-select.invalid_value,
-.invalid_value {
-  background: #fcc;
 }
 
 // Ajax notification styling
@@ -1087,187 +1102,8 @@ table#index_columns {
   }
 }
 
-// Settings - config forms
-.config-form {
-  fieldset {
-    margin-top: 0;
-    padding: 0;
-    clear: both;
-    border-radius: 0;
-
-    p {
-      margin: 0;
-      padding: .5em;
-      background: $body-color;
-      border-top: 0;
-    }
-
-    // form error list
-    .errors {
-      margin: 0 -2px 1em;
-      padding: .5em 1.5em;
-      background: #fbead9;
-      border-color: #c83838;
-      border-style: solid;
-      border-width: 1px 0;
-      list-style: none;
-      font-family: $font-family-base;
-      font-size: small;
-    }
-
-    // field error list
-    .inline_errors {
-      margin: .3em .3em .3em;
-      margin-left: 0;
-      padding: 0;
-      list-style: none;
-      color: $red;
-      font-size: small;
-    }
-
-    .doc {
-      margin-left: 1em;
-    }
-
-    .disabled-notice {
-      margin-left: 1em;
-      font-size: 80%;
-      text-transform: uppercase;
-      color: #e00;
-      cursor: help;
-    }
-
-    th {
-      padding: .3em .3em .3em;
-      padding-left: .5em;
-      text-align: left;
-      vertical-align: top;
-      background: transparent;
-      filter: none;
-      border-top: 1px solid #d5d5d5;
-      border-right: none;
-
-      small {
-        display: block;
-        font-weight: normal;
-        font-family: $font-family-base;
-        font-size: x-small;
-        color: #d5d5d5;
-      }
-    }
-
-    td {
-      padding-top: .3em;
-      padding-bottom: .3em;
-      vertical-align: top;
-      border-top: 1px solid #d5d5d5;
-      border-right: none;
-    }
-  }
-
-  legend {
-    display: none;
-  }
-
-  input {
-    // see forms.scss
-  }
-
-  select {
-    // see forms.scss
-    display: inline-block;
-  }
-
-  textarea {
-    // see forms.scss
-  }
-
-  span.checkbox {
-    padding: 2px;
-    display: inline-block;
-
-    &.custom {
-      input[type=checkbox] {
-        border-color: $pma-custom-color;
-        &:checked {
-          background-color: $pma-custom-color;
-        }
-      }
-    }
-  }
-
-  // customized field
-  input.custom,
-  .custom {
-    border-color: $pma-custom-color;
-  }
-
-  .field-error {
-    border-color: #a11 !important;
-  }
-
-  .field-comment-mark {
-    font-family: serif;
-    color: #007;
-    cursor: help;
-    padding: 0 .2em;
-    font-weight: bold;
-    font-style: italic;
-  }
-
-  .field-comment-warning {
-    color: #a00;
-  }
-
-  // error list
-  dd {
-    margin-left: .5em;
-
-    &::before {
-      content: "\25B8  ";
-    }
-  }
-}
-
-fieldset {
-  .group-header {
-    th {
-      background: $pma-fieldset-bg;
-    }
-
-    + tr th {
-      padding-top: .6em;
-    }
-  }
-
-  .group-field-1 th,
-  .group-header-2 th {
-    padding-left: 1.5em;
-  }
-
-  .group-field-2 th,
-  .group-header-3 th {
-    padding-left: 3em;
-  }
-
-  .group-field-3 th {
-    padding-left: 4.5em;
-  }
-
-  .disabled-field {
-    th, th small, td {
-      color: $pma-fieldset-color;
-      background-color: $pma-fieldset-bg;
-    }
-  }
-}
-
 .click-hide-message {
   cursor: pointer;
-}
-
-.prefsmanage_opts {
-  margin-left: 2em;
 }
 
 #prefs_autoload {
@@ -1648,6 +1484,10 @@ input#auto_increment_opt {
   display: inline-block;
   height: 3em;
   width: .5em;
+
+  &:last-child {
+    width: 0;
+  }
 }
 
 div.navigation_separator {
@@ -1810,15 +1650,34 @@ body .ui-widget {
 
 div#page_content div {
   &#tableslistcontainer {
-    margin-top: 1em;
+    margin-top: .5rem;
 
-    table.data {
-      border-top: .1px solid #eee;
+    .pageselector:first-child {
+      margin-bottom: .5rem;
     }
-  }
 
-  &.result_query {
-    margin-top: 1em;
+    .pageselector:last-child {
+      margin-top: .5rem;
+    }
+
+    .pageselector {
+      form {
+        // see navigation.scss
+        select.pageselector {
+          margin: 0 .4rem;
+        }
+      }
+
+      a {
+        padding: 0 .4rem .5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+          color: $pma-link-color;
+        }
+      }
+    }
   }
 }
 

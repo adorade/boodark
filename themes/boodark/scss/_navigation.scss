@@ -14,9 +14,7 @@
   }
 
   form {
-    margin: 0;
-    padding: 0;
-    display: inline;
+    // see `.pageselector` below
   }
 
   select {
@@ -74,6 +72,12 @@
   #recentTable,
   #favoriteTable {
     width: 200px;
+  }
+}
+
+.pageselector {
+  form {
+    display: inline;
   }
 }
 
@@ -383,8 +387,8 @@ li.fast_filter {
   width: 24px;
   height: 40px;
   line-height: 36px;
-  background: #222;
-  color: #555;
+  background: $pma-body-bg;
+  color: $pma-link-color;
   font-weight: bold;
   position: fixed;
   top: 0;
@@ -392,7 +396,6 @@ li.fast_filter {
   text-align: center;
   cursor: pointer;
   z-index: 800;
-  text-shadow: 0 1px 0 $white;
   filter: dropshadow(color = $white, offx = 0, offy = 1);
   border: 1px solid rgba($black, .125);
 }

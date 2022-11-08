@@ -3,6 +3,7 @@
 // =============================================================================
 
 // PMA color system
+// -----------------------------------------------------------------------------
 $white: #fff;
 $black: #000;
 $pma-gray-100: #f8f9fa;
@@ -35,16 +36,20 @@ $pma-orange:  #fd7e14;
 $pma-cyan:    #0dcaf0;
 
 // PMA Base Style
+// -----------------------------------------------------------------------------
 $pma-body-color:              $white;
 $pma-body-bg:                 $pma-gray-900;
 $pma-component-bg:            $pma-gray-800;
 $pma-component-hover-bg:      $pma-gray-600;
+$pma-component-active-color:  $white;
+$pma-component-active-bg:     $pma-blue;
 $pma-table-bg:                $pma-gray-700;
+$pma-form-border-color:       $pma-gray-900;
 $pma-selected-bg:             $pma-gray-700;
+$pma-fieldset-color:          $pma-gray-300;
 $pma-fieldset-bg:             $pma-gray-600;
 $pma-border-color:            $pma-gray-600;
 $pma-disable-color:           $pma-gray-500;
-$pma-fieldset-color:          $pma-gray-300;
 $pma-cond-border-color:       $black;
 $pma-button-color:            $pma-cyan;
 $pma-link-color:              $pma-cyan;
@@ -85,14 +90,14 @@ $table-active-color:          $table-color;
 $table-active-bg:             rgba($pma-body-bg, .7);
 $table-hover-color:           $table-color;
 $table-hover-bg:              rgba($pma-body-bg, .8);
-$table-border-color:          $border-color;
+$table-border-color:          $pma-form-border-color;
 $table-group-separator-color: $pma-border-color;
 // Buttons + Forms
 // Buttons
 // Forms
 $input-bg:                    darken($pma-component-bg, 2.5%);
 $input-disabled-bg:           $pma-gray-600;
-$input-border-color:          $pma-body-bg;
+$input-border-color:          $pma-form-border-color;
 $input-placeholder-color:     $pma-gray-400;
 $input-group-addon-bg:        $pma-component-bg;
 $form-check-input-border:     1px solid rgba($pma-body-color, .4);
@@ -101,8 +106,14 @@ $form-switch-color:           rgba($pma-body-color, .75);
 // Form validation
 // Z-index master list
 // Navs
-$nav-pills-bg:                $pma-body-bg;
-$nav-tabs-link-active-color:  $pma-gray-200;
+$nav-tabs-bg:                       rgba($pma-body-bg, .5);
+$nav-tabs-border-color:             rgba($pma-body-bg, .5);
+$nav-tabs-border-width:             0;
+$nav-tabs-link-hover-border-color:  transparent;
+$nav-tabs-link-active-color:        $pma-component-active-color;
+$nav-tabs-link-active-bg:           $pma-component-active-bg;
+$nav-tabs-link-active-border-color: rgba($pma-body-bg, .5);
+$nav-pills-bg:                      $pma-body-bg;
 // Navbar
 $navbar-light-color:                $white;
 $navbar-light-hover-color:          rgba($white, .65);
@@ -162,7 +173,7 @@ $modal-content-bg:            $pma-gray-700;
 // List group
 $list-group-color:            $pma-body-color;
 $list-group-bg:               $pma-component-bg;
-$list-group-border-color:     rgba($black, .25);
+$list-group-border-color:     lighten($pma-form-border-color, 5%);
 // Image thumbnails
 // Figures
 // Breadcrumbs
@@ -196,6 +207,7 @@ $navigation-drop-button-bg:   $pma-border-color;
 $navigation-resizer-hover-bg: $pma-button-color;
 
 // Breadcrumbs
+$breadcrumb-navbar-padding:       .5rem;
 $breadcrumb-navbar-padding-y:     .5rem;
 $breadcrumb-navbar-padding-x:     1.8rem;
 $breadcrumb-navbar-margin-bottom: 0;
