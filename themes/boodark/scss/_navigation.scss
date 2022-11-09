@@ -1,3 +1,4 @@
+// stylelint-disable scss/at-extend-no-missing-placeholder
 // Navigation
 
 #pma_navigation {
@@ -403,10 +404,6 @@ li.fast_filter {
     padding: 2px 0;
 
     &:hover {
-      .drop_button {
-        background: lighten($black, 20%);
-      }
-
       ul {
         display: block;
       }
@@ -414,6 +411,11 @@ li.fast_filter {
 
     ul {
       position: absolute;
+      top: 100%;
+      left: 3px;
+      right: 0;
+      z-index: 802;
+      display: none;
       margin: 0;
       padding: 0;
       overflow: hidden;
@@ -425,25 +427,12 @@ li.fast_filter {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
       box-shadow: 0 0 5px $navigation-shadow-color;
-      top: 100%;
-      left: 3px;
-      right: 0;
-      display: none;
-      z-index: 802;
     }
 
     li {
       white-space: nowrap;
       padding: 0;
       border-radius: 0;
-
-      img {
-        vertical-align: sub;
-      }
-
-      &:hover {
-        background: #f2f2f2;
-      }
     }
 
     a {
@@ -459,11 +448,6 @@ li.fast_filter {
   }
 
   .drop_button {
-    padding: .3em;
-    border: 1px solid $navigation-drop-button-bg;
-    border-radius: .3em;
-    background: $navigation-drop-button-bg;
-    color: $body-color;
-    cursor: pointer;
+    @include button-variant($secondary, $secondary);
   }
 }

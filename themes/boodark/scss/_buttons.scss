@@ -1,7 +1,7 @@
 // Buttons
 
 .btn-outline-secondary {
-  @include button-outline-variant($btn-outline-secondary);
+  @include button-variant($dark, $dark);
 }
 
 .btn-link {
@@ -34,4 +34,9 @@ button.mult_submit {
     text-decoration: underline;
     color: $pma-button-color;
   }
+}
+
+#bulkActionDropButton,
+#bulkActionExportButton {
+  background-color: #111519;
 }

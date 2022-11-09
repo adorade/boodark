@@ -1448,9 +1448,11 @@ input#auto_increment_opt {
     }
 
     &[type=submit]:not(.btn-primary) {
+      border: none;
       background: none;
 
       &:hover {
+        color: $pma-cyan;
         cursor: pointer;
       }
     }
@@ -1497,7 +1499,7 @@ div.navigation_separator {
 }
 
 .central_columns_navigation {
-  padding: 1.5% 0 !important;
+  padding: 1rem !important;
 
   select {
     display: block;
@@ -1505,6 +1507,7 @@ div.navigation_separator {
     margin: .8em 0;
   }
 }
+// end Table navigation
 
 .cEdit {
   margin: 0;
