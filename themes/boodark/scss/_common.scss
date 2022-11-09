@@ -1,3 +1,4 @@
+// stylelint-disable at-rule-empty-line-before
 // stylelint-disable scss/at-extend-no-missing-placeholder
 // Common
 
@@ -1582,61 +1583,6 @@ div.navigation_separator {
   }
 }
 
-// css for timepicker
-.ui-timepicker-div {
-  .ui-widget-header {
-    margin-bottom: 8px;
-  }
-
-  dl {
-    text-align: left;
-
-    dt {
-      height: 25px;
-      margin-bottom: -25px;
-    }
-
-    dd {
-      margin: 0 10px 10px 85px;
-    }
-  }
-
-  td {
-    font-size: 90%;
-  }
-}
-
-.ui-tpicker-grid-label {
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.ui-timepicker-rtl {
-  direction: rtl;
-
-  dl {
-    text-align: right;
-
-    dd {
-      margin: 0 65px 10px 10px;
-    }
-  }
-}
-
-body .ui-widget {
-  font-size: 1em;
-}
-
-.ui-dialog .pma-fieldset legend a {
-  color: $pma-link-color;
-}
-
-.ui-draggable {
-  z-index: 801;
-}
-
 // over-riding jqplot-yaxis class
 .jqplot-yaxis {
   left: 0 !important;
@@ -1697,10 +1643,6 @@ table.show_create {
   label {
     font-weight: bold;
   }
-}
-
-.ui-dialog {
-  position: fixed;
 }
 
 .small_font {
@@ -1939,34 +1881,6 @@ th {
 }
 // end of styles of sortable tables
 
-// styles for jQuery-ui to support rtl languages
-body .ui-dialog {
-  .ui-dialog-titlebar-close {
-    right: .3em;
-    left: initial;
-  }
-
-  .ui-dialog-title {
-    float: left;
-  }
-
-  .ui-dialog-buttonpane .ui-dialog-buttonset {
-    float: right;
-  }
-
-  .ui-dialog-buttonpane .ui-dialog-buttonset button {
-    color: $white;
-    background: none;
-    background-color: #6c757d !important;
-    border-color: #6c757d;
-  }
-
-  .ui-dialog-buttonpane .ui-dialog-buttonset button:hover {
-    background-color: #5a6268 !important;
-  }
-}
-// end of styles for jQuery-ui to support rtl languages
-
 // templates/database/multi_table_query
 .multi_table_query_form {
   .query-form__tr--hide {
@@ -2048,11 +1962,6 @@ body .ui-dialog {
     width: 100%;
     height: 450px;
   }
-
-  .ui-dialog {
-    margin: 1%;
-    width: 95% !important;
-  }
 }
 
 #tooltip_editor {
@@ -2079,24 +1988,6 @@ body .ui-dialog {
 
 #filterQueryText {
   vertical-align: baseline;
-}
-
-.ui_tpicker_hour_slider,
-.ui_tpicker_minute_slider,
-.ui_tpicker_second_slider,
-.ui_tpicker_millisec_slider,
-.ui_tpicker_microsec_slider {
-  margin-left: 40px;
-  margin-top: 4px;
-  height: .75rem;
-}
-
-.ui-timepicker-div dl .ui_tpicker_timezone select {
-  margin-left: 50px;
-}
-
-.ui_tpicker_time_input {
-  width: 100%;
 }
 
 // Extra large devices (large desktops, 1200px and up)
