@@ -119,18 +119,18 @@ $navbar-light-color:                $white;
 $navbar-light-hover-color:          rgba($white, .65);
 $navbar-light-active-color:         $white;
 $navbar-light-disabled-color:       rgba($white, .25);
-$navbar-light-toggler-focus-bg:     $black;
+$navbar-light-toggler-focus-bg:     $pma-body-bg;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-light-toggler-border-color: rgba($white, .1);
+$navbar-light-toggler-border-color: rgba($black, .1);
 $navbar-light-brand-color:          $navbar-light-active-color;
 $navbar-light-brand-hover-color:    $navbar-light-active-color;
 $navbar-dark-color:                 rgba($black, .55);
 $navbar-dark-hover-color:           rgba($black, .7);
 $navbar-dark-active-color:          rgba($black, .9);
 $navbar-dark-disabled-color:        rgba($black, .3);
-$navbar-dark-toggler-focus-bg:      $white;
+$navbar-dark-toggler-focus-bg:      $pma-body-bg;
 $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
-$navbar-dark-toggler-border-color:  rgba($black, .1);
+$navbar-dark-toggler-border-color:  rgba($white, .1);
 $navbar-dark-brand-color:           $navbar-dark-active-color;
 $navbar-dark-brand-hover-color:     $navbar-dark-active-color;
 // Dropdowns
@@ -209,7 +209,7 @@ $navigation-resizer-hover-bg: $pma-button-color;
 // Breadcrumbs
 $breadcrumb-navbar-padding:       .5rem;
 $breadcrumb-navbar-padding-y:     .5rem;
-$breadcrumb-navbar-padding-x:     1.8rem;
+$breadcrumb-navbar-padding-x:     3rem;
 $breadcrumb-navbar-margin-bottom: 0;
 $breadcrumb-navbar-bg:            $pma-component-bg;
 

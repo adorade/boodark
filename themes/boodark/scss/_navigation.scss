@@ -384,20 +384,19 @@ li.fast_filter {
 }
 
 #pma_navigation_collapser {
-  width: 24px;
-  height: 40px;
-  line-height: 36px;
-  background: $pma-body-bg;
-  color: $pma-link-color;
-  font-weight: bold;
   position: fixed;
   top: 0;
   left: $navigation-width;
+  z-index: 800;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 38px;
+  background: $pma-body-bg;
+  color: $pma-link-color;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-align: center;
   cursor: pointer;
-  z-index: 800;
-  filter: dropshadow(color = $white, offx = 0, offy = 1);
-  border: 1px solid rgba($black, .125);
 }
 
 // Quick warp links

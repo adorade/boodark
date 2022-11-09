@@ -18,3 +18,9 @@
     }
   }
 }
+
+@include media-breakpoint-only(md) {
+  .navbar-collapse {
+    overflow: hidden !important;
+  }
+}
