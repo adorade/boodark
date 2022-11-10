@@ -1,3 +1,4 @@
+// stylelint-disable at-rule-empty-line-before
 // stylelint-disable scss/at-extend-no-missing-placeholder
 // Navigation
 
@@ -384,16 +385,16 @@ li.fast_filter {
   width: 2.5rem;
   height: 2.5rem;
   background-color: $pma-body-bg;
-  background-image: url('../img/chevron-left.svg');
-  background-size: 45%;
-  background-position: center center;
+  background-size: 50%;
+  background-position: center 55%;
   background-repeat: no-repeat;
   color: $pma-link-color;
   font-size: 0;
   cursor: pointer;
+  @extend .ic_chevron-left;
 
   &[title="Show panel"] {
-    background-image: url('../img/chevron-right.svg');
+    @extend .ic_chevron-right;
   }
 }
 

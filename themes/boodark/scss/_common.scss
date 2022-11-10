@@ -1366,12 +1366,11 @@ input#auto_increment_opt {
 }
 
 .coldrop {
-  $svg-color: $pma-cyan;
-  background-image: escape-svg(url('data:image/svg+xml,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#{$svg-color}" d="m 13,6 -5,5 -5,-5 z"/></svg>'));
   cursor: pointer;
   height: 16px;
   margin-top: .5em;
   width: 16px;
+  @extend .ic_b_more;
 
   &:hover {
     background-color: $pma-component-hover-bg;
@@ -1864,21 +1863,21 @@ th {
   }
 
   &.headerSortUp .sorticon {
-    background-image: url("../img/sort-desc.svg");
+    @extend .ic_s_desc;
   }
 
   &.headerSortDown {
     &:hover .sorticon {
-      background-image: url("../img/sort-desc.svg");
+      @extend .ic_s_desc;
     }
 
     .sorticon {
-      background-image: url("../img/sort-asc.svg");
+      @extend .ic_s_asc;
     }
   }
 
   &.headerSortUp:hover .sorticon {
-    background-image: url("../img/sort-asc.svg");
+    @extend .ic_s_asc;
   }
 }
 // end of styles of sortable tables
