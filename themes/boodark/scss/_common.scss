@@ -1,12 +1,9 @@
+// stylelint-disable at-rule-empty-line-before
 // stylelint-disable scss/at-extend-no-missing-placeholder
 // Common
 
 #page_content {
   margin: 0 .5em;
-}
-
-.data {
-  margin: 0 0 12px;
 }
 
 #navbarDropdown > img {
@@ -135,11 +132,6 @@ div.null_div {
   }
 }
 
-button.mult_submit {
-  border: none;
-  background-color: transparent;
-}
-
 // marks table rows/cells if the db field is in a where condition
 .condition {
   border-color: $pma-cond-border-color !important;
@@ -219,7 +211,6 @@ img.lightbulb {
 // no extra space in table cells
 td .icon {
   image-rendering: pixelated;
-  margin: 0;
 }
 
 .selectallarrow {
@@ -232,14 +223,44 @@ td .icon {
 }
 
 #tablesForm {
-  input {
-    margin-top: .75rem;
+  input.checkall_box {
+    margin-top: .65rem;
   }
 
   select {
     display: inline-block;
     width: auto;
   }
+}
+
+// Server > Binary log
+#binlogTable {
+  td a {
+    text-decoration: none;
+  }
+}
+
+// Database > SQL Form
+#sqlqueryform {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  margin-top: 1rem;
+}
+
+// Database > Export table
+.export_table_select {
+  @extend .table-light;
+}
+
+// Database > Operations
+#formDatabaseComment {
+  display: block;
+  margin-top: 1rem;
+}
+
+// Table > Operations
+#moveTableForm {
+  margin-top: 1rem;
 }
 
 // message boxes: error, confirmation
@@ -442,38 +463,19 @@ div#tablestatistics table {
   width: 100%;
 }
 
-.navbar-light {
-  .navbar-toggler {
-    color: $navbar-dark-color;
-    border-color: $navbar-dark-toggler-border-color;
-  }
-
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-dark-toggler-icon-bg);
-  }
-
-  .navbar-nav {
-    .nav-item.active {
-      color: $component-active-color;
-      background-color: $component-active-bg;
-    }
-
-    .nav-link {
-      color: rgba($body-color, .85);
-
-      &:hover {
-        color: rgba($body-color, .55);
-      }
-    }
-  }
-}
-
 #page_nav_icons {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 99;
-  padding: $breadcrumb-navbar-padding-y $breadcrumb-padding-x;
+  height: 2.5rem;
+  padding: $breadcrumb-navbar-padding;
+  background-color: $pma-body-bg;
+
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 #page_settings_icon {
@@ -881,15 +883,17 @@ div.sqlvalidate {
 }
 
 .result_query {
+  margin-top: 1em;
+
   .sqlOuter {
-    background: $pma-component-bg;
+    background: darken($pma-component-bg, 2%);
     text-align: left;
   }
 }
 
 #PMA_slidingMessage code.sql,
 div.sqlvalidate {
-  background: #e5e5e5;
+  background: darken($pma-component-bg, 2%);
 }
 
 textarea#partitiondefinition {
@@ -958,21 +962,6 @@ table {
   }
 }
 
-// Validation error message styles
-input {
-  &[type=text].invalid_value,
-  &[type=password].invalid_value,
-  &[type=number].invalid_value,
-  &[type=date].invalid_value {
-    background: #fcc;
-  }
-}
-
-select.invalid_value,
-.invalid_value {
-  background: #fcc;
-}
-
 // Ajax notification styling
 #loading_parent {
   // Need this parent to properly center the notification division
@@ -982,22 +971,17 @@ select.invalid_value,
 
 .ajax_notification {
   // The notification needs to be shown on the top of the page
-  top: 0;
   position: fixed;
-  margin-top: 200px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  // Keep a little space on the sides of the text
-  padding: $pma-ajax-spacer;
-  width: $pma-ajax-width;
-  // If this is not kept at a high z-index, the jQueryUI modal dialogs (z-index: 1000) might hide this
-  z-index: 1100;
-  text-align: center;
-  display: inline;
+  top: 0;
   left: 0;
   right: 0;
-  background-image: url("../img/ajax_clock_small.svg");
+  display: inline;
+  z-index: 1100;
+  width: $pma-ajax-width;
+  padding: $pma-ajax-spacer;
+  margin: 200px auto 0;
+  text-align: center;
+  background-size: $pma-ajax-bg-zise;
   background-repeat: no-repeat;
   background-position: $pma-ajax-spacer;
   border: $alert-border-width solid transparent;
@@ -1005,6 +989,7 @@ select.invalid_value,
   box-shadow: 0 5px 90px $pma-ajax-shadow;
 
   @extend .alert-info;
+  @extend .ic_ajax_spinner;
 }
 
 #popup_background {
@@ -1117,187 +1102,8 @@ table#index_columns {
   }
 }
 
-// Settings - config forms
-.config-form {
-  fieldset {
-    margin-top: 0;
-    padding: 0;
-    clear: both;
-    border-radius: 0;
-
-    p {
-      margin: 0;
-      padding: .5em;
-      background: $body-color;
-      border-top: 0;
-    }
-
-    // form error list
-    .errors {
-      margin: 0 -2px 1em;
-      padding: .5em 1.5em;
-      background: #fbead9;
-      border-color: #c83838;
-      border-style: solid;
-      border-width: 1px 0;
-      list-style: none;
-      font-family: $font-family-base;
-      font-size: small;
-    }
-
-    // field error list
-    .inline_errors {
-      margin: .3em .3em .3em;
-      margin-left: 0;
-      padding: 0;
-      list-style: none;
-      color: $red;
-      font-size: small;
-    }
-
-    .doc {
-      margin-left: 1em;
-    }
-
-    .disabled-notice {
-      margin-left: 1em;
-      font-size: 80%;
-      text-transform: uppercase;
-      color: #e00;
-      cursor: help;
-    }
-
-    th {
-      padding: .3em .3em .3em;
-      padding-left: .5em;
-      text-align: left;
-      vertical-align: top;
-      background: transparent;
-      filter: none;
-      border-top: 1px solid #d5d5d5;
-      border-right: none;
-
-      small {
-        display: block;
-        font-weight: normal;
-        font-family: $font-family-base;
-        font-size: x-small;
-        color: #d5d5d5;
-      }
-    }
-
-    td {
-      padding-top: .3em;
-      padding-bottom: .3em;
-      vertical-align: top;
-      border-top: 1px solid #d5d5d5;
-      border-right: none;
-    }
-  }
-
-  legend {
-    display: none;
-  }
-
-  input {
-    // see forms.scss
-  }
-
-  select {
-    // see forms.scss
-    display: inline-block;
-  }
-
-  textarea {
-    // see forms.scss
-  }
-
-  span.checkbox {
-    padding: 2px;
-    display: inline-block;
-
-    &.custom {
-      input[type=checkbox] {
-        border-color: $pma-custom-color;
-        &:checked {
-          background-color: $pma-custom-color;
-        }
-      }
-    }
-  }
-
-  // customized field
-  input.custom,
-  .custom {
-    border-color: $pma-custom-color;
-  }
-
-  .field-error {
-    border-color: #a11 !important;
-  }
-
-  .field-comment-mark {
-    font-family: serif;
-    color: #007;
-    cursor: help;
-    padding: 0 .2em;
-    font-weight: bold;
-    font-style: italic;
-  }
-
-  .field-comment-warning {
-    color: #a00;
-  }
-
-  // error list
-  dd {
-    margin-left: .5em;
-
-    &::before {
-      content: "\25B8  ";
-    }
-  }
-}
-
-fieldset {
-  .group-header {
-    th {
-      background: $pma-fieldset-bg;
-    }
-
-    + tr th {
-      padding-top: .6em;
-    }
-  }
-
-  .group-field-1 th,
-  .group-header-2 th {
-    padding-left: 1.5em;
-  }
-
-  .group-field-2 th,
-  .group-header-3 th {
-    padding-left: 3em;
-  }
-
-  .group-field-3 th {
-    padding-left: 4.5em;
-  }
-
-  .disabled-field {
-    th, th small, td {
-      color: $pma-fieldset-color;
-      background-color: $pma-fieldset-bg;
-    }
-  }
-}
-
 .click-hide-message {
   cursor: pointer;
-}
-
-.prefsmanage_opts {
-  margin-left: 2em;
 }
 
 #prefs_autoload {
@@ -1560,12 +1366,11 @@ input#auto_increment_opt {
 }
 
 .coldrop {
-  $svg-color: $pma-cyan;
-  background-image: escape-svg(url('data:image/svg+xml,<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#{$svg-color}" d="m 13,6 -5,5 -5,-5 z"/></svg>'));
   cursor: pointer;
   height: 16px;
   margin-top: .5em;
   width: 16px;
+  @extend .ic_b_more;
 
   &:hover {
     background-color: $pma-component-hover-bg;
@@ -1642,9 +1447,11 @@ input#auto_increment_opt {
     }
 
     &[type=submit]:not(.btn-primary) {
+      border: none;
       background: none;
 
       &:hover {
+        color: $pma-cyan;
         cursor: pointer;
       }
     }
@@ -1678,6 +1485,10 @@ input#auto_increment_opt {
   display: inline-block;
   height: 3em;
   width: .5em;
+
+  &:last-child {
+    width: 0;
+  }
 }
 
 div.navigation_separator {
@@ -1687,7 +1498,7 @@ div.navigation_separator {
 }
 
 .central_columns_navigation {
-  padding: 1.5% 0 !important;
+  padding: 1rem !important;
 
   select {
     display: block;
@@ -1695,6 +1506,7 @@ div.navigation_separator {
     margin: .8em 0;
   }
 }
+// end Table navigation
 
 .cEdit {
   margin: 0;
@@ -1736,11 +1548,15 @@ div.navigation_separator {
   .edit_box_posting {
     background: $white url('../img/ajax_clock_small.gif') no-repeat right center;
     padding-right: 1.5em;
+    // background-size: $pma-ajax-bg-zise;
+    // @extend .ic_ajax_spinner;
   }
 
   .edit_area_loading {
     background: $white url("../img/ajax_clock_small.gif") no-repeat center;
     height: 10em;
+    // background-size: $pma-ajax-bg-zise;
+    // @extend .ic_ajax_spinner;
   }
 
   .goto_link {
@@ -1753,6 +1569,8 @@ div.navigation_separator {
 .saving_edited_data {
   background: url('../img/ajax_clock_small.gif') no-repeat left;
   padding-left: 20px;
+  // background-size: $pma-ajax-bg-zise;
+  // @extend .ic_ajax_spinner;
 }
 
 .relationalTable {
@@ -1764,61 +1582,6 @@ div.navigation_separator {
     width: 125px;
     margin-right: 5px;
   }
-}
-
-// css for timepicker
-.ui-timepicker-div {
-  .ui-widget-header {
-    margin-bottom: 8px;
-  }
-
-  dl {
-    text-align: left;
-
-    dt {
-      height: 25px;
-      margin-bottom: -25px;
-    }
-
-    dd {
-      margin: 0 10px 10px 85px;
-    }
-  }
-
-  td {
-    font-size: 90%;
-  }
-}
-
-.ui-tpicker-grid-label {
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.ui-timepicker-rtl {
-  direction: rtl;
-
-  dl {
-    text-align: right;
-
-    dd {
-      margin: 0 65px 10px 10px;
-    }
-  }
-}
-
-body .ui-widget {
-  font-size: 1em;
-}
-
-.ui-dialog .pma-fieldset legend a {
-  color: $pma-link-color;
-}
-
-.ui-draggable {
-  z-index: 801;
 }
 
 // over-riding jqplot-yaxis class
@@ -1834,15 +1597,34 @@ body .ui-widget {
 
 div#page_content div {
   &#tableslistcontainer {
-    margin-top: 1em;
+    margin-top: .5rem;
 
-    table.data {
-      border-top: .1px solid #eee;
+    .pageselector:first-child {
+      margin-bottom: .5rem;
     }
-  }
 
-  &.result_query {
-    margin-top: 1em;
+    .pageselector:last-child {
+      margin-top: .5rem;
+    }
+
+    .pageselector {
+      form {
+        // see navigation.scss
+        select.pageselector {
+          margin: 0 .4rem;
+        }
+      }
+
+      a {
+        padding: 0 .4rem .5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+          color: $pma-link-color;
+        }
+      }
+    }
   }
 }
 
@@ -1862,10 +1644,6 @@ table.show_create {
   label {
     font-weight: bold;
   }
-}
-
-.ui-dialog {
-  position: fixed;
 }
 
 .small_font {
@@ -2085,52 +1863,24 @@ th {
   }
 
   &.headerSortUp .sorticon {
-    background-image: url("../img/sort-desc.svg");
+    @extend .ic_s_desc;
   }
 
   &.headerSortDown {
     &:hover .sorticon {
-      background-image: url("../img/sort-desc.svg");
+      @extend .ic_s_desc;
     }
 
     .sorticon {
-      background-image: url("../img/sort-asc.svg");
+      @extend .ic_s_asc;
     }
   }
 
   &.headerSortUp:hover .sorticon {
-    background-image: url("../img/sort-asc.svg");
+    @extend .ic_s_asc;
   }
 }
 // end of styles of sortable tables
-
-// styles for jQuery-ui to support rtl languages
-body .ui-dialog {
-  .ui-dialog-titlebar-close {
-    right: .3em;
-    left: initial;
-  }
-
-  .ui-dialog-title {
-    float: left;
-  }
-
-  .ui-dialog-buttonpane .ui-dialog-buttonset {
-    float: right;
-  }
-
-  .ui-dialog-buttonpane .ui-dialog-buttonset button {
-    color: $white;
-    background: none;
-    background-color: #6c757d !important;
-    border-color: #6c757d;
-  }
-
-  .ui-dialog-buttonpane .ui-dialog-buttonset button:hover {
-    background-color: #5a6268 !important;
-  }
-}
-// end of styles for jQuery-ui to support rtl languages
 
 // templates/database/multi_table_query
 .multi_table_query_form {
@@ -2213,11 +1963,6 @@ body .ui-dialog {
     width: 100%;
     height: 450px;
   }
-
-  .ui-dialog {
-    margin: 1%;
-    width: 95% !important;
-  }
 }
 
 #tooltip_editor {
@@ -2244,24 +1989,6 @@ body .ui-dialog {
 
 #filterQueryText {
   vertical-align: baseline;
-}
-
-.ui_tpicker_hour_slider,
-.ui_tpicker_minute_slider,
-.ui_tpicker_second_slider,
-.ui_tpicker_millisec_slider,
-.ui_tpicker_microsec_slider {
-  margin-left: 40px;
-  margin-top: 4px;
-  height: .75rem;
-}
-
-.ui-timepicker-div dl .ui_tpicker_timezone select {
-  margin-left: 50px;
-}
-
-.ui_tpicker_time_input {
-  width: 100%;
 }
 
 // Extra large devices (large desktops, 1200px and up)

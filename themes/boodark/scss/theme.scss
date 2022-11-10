@@ -11,6 +11,7 @@
 @import "tables";
 @import "forms";
 @import "common";
+@import "ui-custom";
 @import "enum-editor";
 @import "gis";
 @import "navigation";
@@ -20,8 +21,8 @@
 @import "icons";
 @import "reboot";
 @import "buttons";
-// @import "nav";
-// @import "navbar";
+@import "nav";
+@import "navbar";
 // @import "card";
 @import "breadcrumb";
 // @import "pagination";
@@ -29,6 +30,7 @@
 // @import "list-group";
 @import "modal";
 @import "console";
+@import "settings";
 @import "print";
 
 // DEBUG
