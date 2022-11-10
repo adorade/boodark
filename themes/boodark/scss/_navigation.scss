@@ -383,13 +383,18 @@ li.fast_filter {
   z-index: 800;
   width: 2.5rem;
   height: 2.5rem;
-  line-height: 38px;
-  background: $pma-body-bg;
+  background-color: $pma-body-bg;
+  background-image: url('../img/chevron-left.svg');
+  background-size: 45%;
+  background-position: center center;
+  background-repeat: no-repeat;
   color: $pma-link-color;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
+  font-size: 0;
   cursor: pointer;
+
+  &[title="Show panel"] {
+    background-image: url('../img/chevron-right.svg');
+  }
 }
 
 // Quick warp links
