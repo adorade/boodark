@@ -167,7 +167,7 @@ $accordion-button-active-color: $pma-body-color;
 // Toasts
 // Badges
 // Modals
-$modal-content-bg:            $pma-gray-700;
+$modal-content-bg:            lighten($pma-gray-800, 5%);
 // Alerts
 // Progress bars
 // List group
@@ -215,6 +215,9 @@ $breadcrumb-navbar-bg:            $pma-component-bg;
 
 // Buttons
 $btn-outline-secondary:       $pma-gray-400;
+
+// Modals
+$modal-cap-bg:                rgba($pma-body-bg, .5);
 
 // Console
 $console-color:               $pma-body-color;

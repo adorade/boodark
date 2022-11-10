@@ -7,7 +7,7 @@
   .ui-dialog-titlebar {
     padding: 1rem 1rem;
     border: none;
-    background: $card-cap-bg;
+    background: $modal-cap-bg;
   }
 
   .ui-dialog-titlebar-close {
@@ -18,7 +18,7 @@
 
   .ui-dialog-buttonpane {
     border: none;
-    background-color: $card-cap-bg;
+    background-color: $modal-cap-bg;
 
     .ui-dialog-buttonset {
       float: right;
