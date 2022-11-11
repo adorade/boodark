@@ -1,0 +1,44 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.bd-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0dcaf0;
+}
+
+.bd-colors {
+  background-color: #111519;
+  border-radius: 0.25rem;
+}
+
+.row-cols-10 > * {
+  flex: 0 0 auto;
+  width: 10%;
+}
+
+.row-cols-10 > .col {
+  width: 86px;
+  height: 86px;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 1400px) {
+  .row-cols-10 > .col {
+    width: 104px;
+    height: 104px;
+  }
+}
+
+footer i {
+  color: #f50057;
+}
