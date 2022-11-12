@@ -25,7 +25,12 @@ body {
   width: 10%;
 }
 
-.row-cols-10 > .col {
+.swatch {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swatch-item {
   width: 86px;
   height: 86px;
   margin: 0.5rem;
@@ -33,7 +38,7 @@ body {
 }
 
 @media (min-width: 1400px) {
-  .row-cols-10 > .col {
+  .swatch-item {
     width: 104px;
     height: 104px;
   }
