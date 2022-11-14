@@ -35,6 +35,31 @@ $pma-green:         #198754;
 $pma-teal:          #20c997;
 $pma-cyan:          #0dcaf0;
 
+// Theme Colors
+$pma-theme-colors: (
+  "white":    $white,
+  "black":    $black,
+  "gray-100": $pma-gray-100,
+  "gray-200": $pma-gray-200,
+  "gray-300": $pma-gray-300,
+  "gray-400": $pma-gray-400,
+  "gray-500": $pma-gray-500,
+  "gray-600": $pma-gray-600,
+  "gray-700": $pma-gray-700,
+  "gray-800": $pma-gray-800,
+  "gray-900": $pma-gray-900,
+  "blue":     $pma-blue,
+  "indigo":   $pma-indigo,
+  "purple":   $pma-purple,
+  "pink":     $pma-pink,
+  "red":      $pma-red,
+  "orange":   $pma-orange,
+  "yellow":   $pma-yellow,
+  "green":    $pma-green,
+  "teal":     $pma-teal,
+  "cyan":     $pma-cyan
+);
+
 // PMA Base Style
 // -----------------------------------------------------------------------------
 $pma-body-color:              $white;
