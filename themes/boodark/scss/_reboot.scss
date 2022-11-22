@@ -11,3 +11,7 @@ body {
   --pma-dark-color: $pma-gray-400-rgb;
   color: rgba(var(--pma-dark-color), var(--bs-text-opacity)) !important;
 }
+
+ul {
+  list-style: none;
+}
