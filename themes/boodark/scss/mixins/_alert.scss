@@ -8,7 +8,7 @@
 @mixin alert-variant($color, $border, $background) {
   color: $color;
   @include gradient-bg($background);
-  border-color: $border;
+  border-color: $border !important;
 
   .alert-link {
     color: shade-color($color, 20%);
