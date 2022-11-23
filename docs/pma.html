@@ -13,6 +13,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cheatsheet.css">
     <style>
       .bd-placeholder-img {
         font-size: 2rem;
@@ -60,17 +61,3217 @@
       </nav>
     </header>
 
-    <section class="hero py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1 class="text-center mb-0">Hello Motto!</h1>
-          </div>
-        </div>
-      </div>
-    </section>
+    <aside class="bd-aside sticky-xl-top text-muted align-self-start px-2">
+      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
+      <nav class="small" id="toc">
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Contents</button>
+            <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+              <li><a class="d-inline-flex align-items-center rounded" href="#typography">Typography</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms</button>
+            <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+              <li><a class="d-inline-flex align-items-center rounded" href="#forms-overview">Overview</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#disabled-forms">Disabled forms</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#sizing">Sizing</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#input-group">Input group</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#floating-labels">Floating labels</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#validation">Validation</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#reboot">Reboot</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#tables-collapse" aria-controls="tables-collapse">Tables</button>
+            <ul class="list-unstyled ps-3 collapse" id="tables-collapse">
+              <li><a class="d-inline-flex align-items-center rounded" href="#tables-server">Server</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#tables-database">Database</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#tables-browse">Browse table</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Components</button>
+            <ul class="list-unstyled ps-3 collapse" id="components-collapse">
+              <li><a class="d-inline-flex align-items-center rounded" href="#accordion">Accordion</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#alerts">Alerts</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#badge">Badge</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#breadcrumb">Breadcrumb</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#buttons">Buttons</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#button-group">Button group</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#card">Card</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#dropdowns">Dropdowns</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#list-group">List group</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#modal">Modal</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#navs">Navs</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#navbar">Navbar</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#pagination">Pagination</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#spinners">Spinners</a></li>
+              <li><a class="d-inline-flex align-items-center rounded" href="#tooltips">Tooltips</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#layout-collapse" aria-controls="layout-collapse">Layout</button>
+            <ul class="list-unstyled ps-3 collapse" id="layout-collapse">
+              <li><a class="d-inline-flex align-items-center rounded" href="#grid">Grid</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#code-mirror-collapse" aria-controls="code-mirror-collapse">CodeMirror</button>
+            <ul class="list-unstyled ps-3 collapse" id="code-mirror-collapse">
+              <li><a class="d-inline-flex align-items-center rounded" href="#sqlquery">SQL Query</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#jquery-ui-collapse" aria-controls="jquery-ui-collapse">jQuery-ui</button>
+            <ul class="list-unstyled ps-3 collapse" id="jquery-ui-collapse">
+              <li><a class="d-inline-flex align-items-center rounded" href="#ui-dialog">Dialog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-    <footer class="bg-light py-3">
+    <div class="bd-cheatsheet container-fluid bg-body">
+      <section id="content">
+        <h2 class="sticky-xl-top fw-bold mb-0 py-3">Contents</h2>
+
+        <article class="" id="typography">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Typography</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <p class="h1">Heading 1</p>
+              <p class="h2">Heading 2</p>
+              <p class="h3">Heading 3</p>
+              <p class="h4">Heading 4</p>
+              <p class="h5">Heading 5</p>
+              <p class="h6 mb-0">Heading 6</p>
+            </div>
+
+            <div class="bd-example">
+              <p class="lead mb-0">
+                This is a lead paragraph. It stands out from regular paragraphs.
+              </p>
+            </div>
+
+            <div class="bd-example">
+              <p class="mb-0">You can use the mark tag to <mark>highlight</mark> text.</p>
+              <p class="mb-0"><del>This line of text is meant to be treated as deleted text.</del></p>
+              <p class="mb-0"><s>This line of text is meant to be treated as no longer accurate.</s></p>
+              <p class="mb-0"><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+              <p class="mb-0"><u>This line of text will render as underlined.</u></p>
+              <p class="mb-0"><small>This line of text is meant to be treated as fine print.</small></p>
+              <p class="mb-0"><strong>This line rendered as bold text.</strong></p>
+              <p class="mb-0"><em>This line rendered as italicized text.</em></p>
+            </div>
+
+            <div class="bd-example">
+              <p class="mb-0">This text is meant to be <a href="#">treated as link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-danger" href="#">treated as danger link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-primary" href="#">treated as primary link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-secondary" href="#">treated as secondary link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-success" href="#">treated as success link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-info" href="#">treated as info link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-dark" href="#">treated as light link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-light" href="#">treated as dark link</a> to a computer program.</p>
+              <p class="mb-0">This text is meant to be <a class="text-white" href="#">treated as white link</a> to a computer program.</p>
+            </div>
+
+            <div class="bd-example">
+              <ul class="list-unstyled mb-0">
+                <li>This is a list.</li>
+                <li>It appears completely unstyled.</li>
+                <li>Structurally, it's still a list.</li>
+                <li>However, this style only applies to immediate child elements.</li>
+                <li>Nested lists:
+                  <ul>
+                    <li>are unaffected by this style</li>
+                    <li>will still show a bullet</li>
+                    <li>and have appropriate left margin</li>
+                  </ul>
+                </li>
+                <li>This may still come in handy in some situations.</li>
+              </ul>
+            </div>
+
+            <div class="bd-example">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">This is a list item.</li>
+                <li class="list-inline-item">And another one.</li>
+                <li class="list-inline-item">But they're displayed inline.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="forms">
+        <h2 class="sticky-xl-top fw-bold mb-0 py-3">Forms</h2>
+
+        <article class="" id="forms-overview">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Overview</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <fieldset class="mb-3">
+                  <legend>Radios buttons</legend>
+                  <div class="form-check">
+                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
+                    <label class="form-check-label" for="exampleRadio1">Default radio</label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="radio" name="radios" class="form-check-input" id="exampleRadio2">
+                    <label class="form-check-label" for="exampleRadio2">Another radio</label>
+                  </div>
+                </fieldset>
+                <div class="mb-3">
+                  <label class="form-label" for="customFile">Upload</label>
+                  <input type="file" class="form-control" id="customFile">
+                </div>
+                <div class="mb-3 form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                </div>
+                <div class="mb-3">
+                  <label for="customRange3" class="form-label">Example range</label>
+                  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="disabled-forms">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Disabled forms</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <form>
+                <fieldset disabled aria-label="Disabled fieldset example">
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">Disabled input</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option>Disabled select</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                      <label class="form-check-label" for="disabledFieldsetCheck">
+                        Can't check this
+                      </label>
+                    </div>
+                  </div>
+                  <fieldset class="mb-3">
+                    <legend>Disabled radios buttons</legend>
+                    <div class="form-check">
+                      <input type="radio" name="radios" class="form-check-input" id="disabledRadio1" disabled>
+                      <label class="form-check-label" for="disabledRadio1">Disabled radio</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" name="radios" class="form-check-input" id="disabledRadio2" disabled>
+                      <label class="form-check-label" for="disabledRadio2">Another radio</label>
+                    </div>
+                  </fieldset>
+                  <div class="mb-3">
+                    <label class="form-label" for="disabledCustomFile">Upload</label>
+                    <input type="file" class="form-control" id="disabledCustomFile" disabled>
+                  </div>
+                  <div class="mb-3 form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="disabledSwitchCheckChecked" checked disabled>
+                    <label class="form-check-label" for="disabledSwitchCheckChecked">Disabled checked switch checkbox input</label>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledRange" class="form-label">Disabled range</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="disabledRange">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="sizing">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Sizing</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="mb-3">
+                <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+              </div>
+              <div class="mb-3">
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-0">
+                <input type="file" class="form-control form-control-lg" aria-label="Large file input example">
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <div class="mb-3">
+                <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+              </div>
+              <div class="mb-3">
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-0">
+                <input type="file" class="form-control form-control-sm" aria-label="Small file input example">
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="input-group">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Input group</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+              <label for="basic-url" class="form-label">Your vanity URL</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">.00</span>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="floating-labels">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Floating labels</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="validation">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Validation</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="validationServer01" class="form-label">First name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer02" class="form-label">Last name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServerUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationServer03" class="form-label">City</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer04" class="form-label">State</label>
+                  <select class="form-select is-invalid" id="validationServer04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationServer05" class="form-label">Zip</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="reboot">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Reboot</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <form>
+                <fieldset>
+                  <legend>Example legend - Without ".form-*" class</legend>
+                  <div class="mb-3">
+                    <label for="input">Example input</label>
+                    <input type="text" id="input" placeholder="Example input">
+                  </div>
+                  <div class="mb-3">
+                    <label for="password">Example password</label>
+                    <input type="password" id="password">
+                  </div>
+                  <div class="mb-3">
+                    <label for="number">Example number</label>
+                    <input type="number" id="number">
+                  </div>
+                  <div class="mb-3">
+                    <label for="range">Example range</label>
+                    <input type="range" id="range" min="0" max="10">
+                  </div>
+                  <div class="bg-black p-3 mb-3">
+                    <label for="file">Example file input</label>
+                    <input class="" type="file" id="file">
+                  </div>
+                  <div class="mb-3">
+                    <label for="select">Example select</label>
+                    <select id="select" class="d-inline-block w-auto">
+                      <option value="">Choose...</option>
+                      <optgroup label="Option group 1">
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                      </optgroup>
+                      <optgroup label="Option group 2">
+                        <option value="">Option 4</option>
+                        <option value="">Option 5</option>
+                        <option value="">Option 6</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <div>
+                      <input type="checkbox" value="">
+                      <label>Default checkbox</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" value="" checked>
+                      <label>Checked checkbox</label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div>
+                      <input type="checkbox" value="" disabled>
+                      <label>Disabled checkbox</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" value="" checked disabled>
+                      <label>Disabled checked checkbox</label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div>
+                      <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label for="exampleRadios1">Default radio</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label for="exampleRadios2">Second default radio</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                      <label for="exampleRadios3">Disabled radio</label>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="textarea">Example textarea</label>
+                    <textarea id="textarea" rows="3"></textarea>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+
+            <div class="bd-example">
+              <form>
+                <fieldset>
+                  <legend>Example legend - With ".form-*" class</legend>
+                  <div class="mb-3">
+                    <label class="form-label" for="input">Example input</label>
+                    <input class="form-control d-inline-block w-auto" type="text" id="input" placeholder="Example input">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="password">Example password</label>
+                    <input class="form-control d-inline-block w-auto" type="password" id="password">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="number">Example number</label>
+                    <input class="form-control d-inline-block w-auto" type="number" id="number">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="range">Example range</label>
+                    <input class="form-range" type="range" id="range" min="0" max="10">
+                  </div>
+                  <div class="bg-black p-3 mb-3">
+                    <label class="form-label" for="file">Example file input</label>
+                    <input class="form-control d-inline-block w-auto" type="file" id="file">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="select">Example select</label>
+                    <select id="select" class="form-select d-inline-block w-auto">
+                      <option value="">Choose...</option>
+                      <optgroup label="Option group 1">
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                        <option value="">Option 3</option>
+                      </optgroup>
+                      <optgroup label="Option group 2">
+                        <option value="">Option 4</option>
+                        <option value="">Option 5</option>
+                        <option value="">Option 6</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                      </label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                      <label class="form-check-label" for="flexCheckDisabled">
+                        Disabled checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                      <label class="form-check-label" for="flexCheckCheckedDisabled">
+                        Disabled checked checkbox
+                      </label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios4">Default radio</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios5" value="option2">
+                      <label class="form-check-label" for="exampleRadios5">Second default radio</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios6" value="option3" disabled>
+                      <label class="form-check-label" for="exampleRadios6">Disabled radio</label>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="tables">
+        <h2 class="sticky-xl-top fw-bold mb-0 py-3">Tables</h2>
+
+        <article class="" id="tables-server">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Server</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <table class="table table-striped table-hover w-auto mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th></th>
+                    <th>
+                      <a href="#">
+                        Database
+                        <img src="images/dot.gif" title="Ascending" alt="Ascending" class="icon ic_s_asc">
+                      </a>
+                    </th>
+                    <th>
+                      <a href="#">
+                        Collation
+                      </a>
+                    </th>
+                    <th>Primary replication</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr class="db-row" data-filter-row="DASHBOARD">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="dashboard" value="dashboard">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'dashboard'">
+                        dashboard
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unicode (UCA 4.0.0), case-insensitive">
+                        utf8mb4_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated
+                      </span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="dashboard" href="#" title="Check privileges for database &quot;dashboard&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row noclick" data-filter-row="INFORMATION_SCHEMA">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="information_schema" value="information_schema" disabled="">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'information_schema'">
+                        information_schema
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unknown, case-insensitive">
+                        utf8mb3_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated</span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="information_schema" href="#?route=/server/privileges&amp;db=information_schema&amp;checkprivsdb=information_schema" title="Check privileges for database &quot;information_schema&quot;.">
+                        <span class="text-nowrap"><img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">&nbsp;Check privileges</span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row" data-filter-row="LARAGON">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="laragon" value="laragon">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'laragon'">
+                        laragon
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unicode (UCA 4.0.0), case-insensitive">
+                        utf8mb4_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap"><img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">&nbsp;Replicated</span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="laragon" href="#" title="Check privileges for database &quot;laragon&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row" data-filter-row="MG_SHOP">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="mg_shop" value="mg_shop">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'mg_shop'">
+                        mg_shop
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unicode (UCA 4.0.0), case-insensitive">
+                        utf8mb4_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated
+                      </span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="mg_shop" href="#" title="Check privileges for database &quot;mg_shop&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row noclick" data-filter-row="MYSQL">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="mysql" value="mysql" disabled="">
+                    </td>
+                    <td class="name">
+                      <a href="#?route=/database/structure&amp;db=mysql" title="Jump to database 'mysql'">
+                        mysql
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Swedish, case-insensitive">
+                        latin1_swedish_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated
+                      </span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="mysql" href="#" title="Check privileges for database &quot;mysql&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row noclick" data-filter-row="PERFORMANCE_SCHEMA">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="performance_schema" value="performance_schema" disabled="">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'performance_schema'">
+                        performance_schema
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unknown, case-insensitive">
+                        utf8mb3_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated</span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="performance_schema" href="#" title="Check privileges for database &quot;performance_schema&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row noclick" data-filter-row="PHPMYADMIN">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="phpmyadmin" value="phpmyadmin" disabled="">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'phpmyadmin'">
+                        phpmyadmin
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Swedish, case-insensitive">
+                        latin1_swedish_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated</span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="phpmyadmin" href="#" title="Check privileges for database &quot;phpmyadmin&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row" data-filter-row="PS_SHOP">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="ps_shop" value="ps_shop">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'ps_shop'">
+                        ps_shop
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unknown, case-insensitive">
+                        utf8mb3_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated
+                      </span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="ps_shop" href="#" title="Check privileges for database &quot;ps_shop&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row noclick" data-filter-row="SYS">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="sys" value="sys" disabled="">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'sys'">
+                        sys
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unknown, case-insensitive">
+                        utf8mb3_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated
+                      </span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="sys" href="#" title="Check privileges for database &quot;sys&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr class="db-row" data-filter-row="WP_BLOG">
+                    <td class="tool">
+                      <input type="checkbox" name="selected_dbs[]" class="checkall" title="wp_blog" value="wp_blog">
+                    </td>
+                    <td class="name">
+                      <a href="#" title="Jump to database 'wp_blog'">
+                        wp_blog
+                      </a>
+                    </td>
+                    <td class="value">
+                      <dfn title="Unicode (UCA 4.0.0), case-insensitive">
+                        utf8mb4_general_ci
+                      </dfn>
+                    </td>
+                    <td class="tool text-center">
+                      <span class="text-nowrap">
+                        <img src="images/dot.gif" title="Replicated" alt="Replicated" class="icon ic_s_success">
+                        &nbsp;Replicated
+                      </span>
+                    </td>
+                    <td class="tool">
+                      <a class="server_databases" data="wp_blog" href="#" title="Check privileges for database &quot;wp_blog&quot;.">
+                        <span class="text-nowrap">
+                          <img src="images/dot.gif" title="Check privileges" alt="Check privileges" class="icon ic_s_rights">
+                          &nbsp;Check privileges
+                        </span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tfoot class="table-light">
+                  <tr>
+                    <th colspan="3">
+                      Total:
+                      <span id="filter-rows-count">10</span>
+                    </th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="" id="tables-database">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Database</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="table-responsive">
+                <table class="table table-light table-striped table-hover table-sm w-auto mb-0 data">
+                  <thead class="table-light">
+                    <tr>
+                      <th class="d-print-none"></th>
+                      <th>
+                        <a href="#" title="Sort">
+                          Table
+                          <img src="images/dot.gif" title="" alt="Ascending" class="icon ic_s_asc sort_arrow">
+                          <img src="images/dot.gif" title="" alt="Descending" class="icon ic_s_desc sort_arrow hide">
+                        </a>
+                      </th>
+                      <th colspan="7" class="d-print-none">
+                        Action
+                      </th>
+                      <th>
+                        <a href="#" title="Sort">Rows</a>
+                        <span class="pma_hint">
+                          <img src="images/dot.gif" title="" alt="" class="icon ic_b_help">
+                          <span class="hide">
+                            May be approximate. Click on the number to get the exact count. See <a href="#" target="documentation">FAQ 3.11</a>.
+                          </span>
+                        </span>
+                      </th>
+                      <th>
+                        <a href="#" title="Sort">Type</a>
+                      </th>
+                      <th>
+                        <a href="#" title="Sort">Collation</a>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="row_tbl_1" data-filter-row="PMA__BOOKMARK">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__bookmark" id="checkbox_tbl_1">
+                      </td>
+                      <th>
+                        <a href="#" title="Bookmarks">pma__bookmark</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__bookmark">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_2" data-filter-row="PMA__CENTRAL_COLUMNS">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__central_columns" id="checkbox_tbl_2">
+                      </td>
+                      <th>
+                        <a href="#" title="Central list of columns">pma__central_columns</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__central_columns">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_3" data-filter-row="PMA__COLUMN_INFO">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__column_info" id="checkbox_tbl_3">
+                      </td>
+                      <th>
+                        <a href="#" title="Column information for phpMyAdmin">pma__column_info</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__column_info">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_4" data-filter-row="PMA__DESIGNER_SETTINGS">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__designer_settings" id="checkbox_tbl_4">
+                      </td>
+                      <th>
+                        <a href="#" title="Settings related to Designer">pma__designer_settings</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_b_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_b_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_b_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__designer_settings">1</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_5" data-filter-row="PMA__EXPORT_TEMPLATES">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__export_templates" id="checkbox_tbl_5">
+                      </td>
+                      <th>
+                        <a href="#" title="Saved export templates">pma__export_templates</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty"class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__export_templates">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_6" data-filter-row="PMA__FAVORITE">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__favorite" id="checkbox_tbl_6">
+                      </td>
+                      <th>
+                        <a href="#" title="Favorite tables">pma__favorite</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_b_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_b_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_b_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__favorite">1</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_7" data-filter-row="PMA__HISTORY">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__history" id="checkbox_tbl_7">
+                      </td>
+                      <th>
+                        <a href="#" title="SQL history for phpMyAdmin">pma__history</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__history">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_8" data-filter-row="PMA__NAVIGATIONHIDING">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__navigationhiding" id="checkbox_tbl_8">
+                      </td>
+                      <th>
+                        <a href="#" title="Hidden items of navigation tree">pma__navigationhiding</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__navigationhiding">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_9" data-filter-row="PMA__PDF_PAGES">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__pdf_pages" id="checkbox_tbl_9">
+                      </td>
+                      <th>
+                        <a href="#" title="PDF relation pages for phpMyAdmin">pma__pdf_pages</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span></a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__pdf_pages">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_10" data-filter-row="PMA__RECENT">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__recent" id="checkbox_tbl_10">
+                      </td>
+                      <th>
+                        <a href="#" title="Recently accessed tables">pma__recent</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_b_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_b_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_b_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop"class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__recent">1</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_11" data-filter-row="PMA__RELATION">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__relation" id="checkbox_tbl_11">
+                      </td>
+                      <th>
+                        <a href="#" title="Relation table">pma__relation</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span></a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__relation">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_12" data-filter-row="PMA__SAVEDSEARCHES">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__savedsearches" id="checkbox_tbl_12">
+                      </td>
+                      <th>
+                        <a href="#" title="Saved searches">pma__savedsearches</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__savedsearches">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_13" data-filter-row="PMA__TABLE_COORDS">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__table_coords" id="checkbox_tbl_13">
+                      </td>
+                      <th>
+                        <a href="#" title="Table coordinates for phpMyAdmin PDF output">pma__table_coords</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__table_coords">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_14" data-filter-row="PMA__TABLE_INFO">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__table_info" id="checkbox_tbl_14">
+                      </td>
+                      <th>
+                        <a href="#" title="Table information for phpMyAdmin">pma__table_info</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__table_info">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_15" data-filter-row="PMA__TABLE_UIPREFS">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__table_uiprefs" id="checkbox_tbl_15">
+                      </td>
+                      <th>
+                        <a href="#" title="Tables&amp;#039; UI preferences">pma__table_uiprefs</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_b_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_b_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_b_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__table_uiprefs">1</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_16" data-filter-row="PMA__TRACKING">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__tracking" id="checkbox_tbl_16">
+                      </td>
+                      <th>
+                        <a href="#" title="Database changes tracking for phpMyAdmin">pma__tracking</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__tracking">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_17" data-filter-row="PMA__USERCONFIG">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__userconfig" id="checkbox_tbl_17">
+                      </td>
+                      <th>
+                        <a href="#" title="User preferences storage for phpMyAdmin">pma__userconfig</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_b_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_b_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_b_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__userconfig">1</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_18" data-filter-row="PMA__USERGROUPS">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__usergroups" id="checkbox_tbl_18">
+                      </td>
+                      <th>
+                        <a href="#" title="User groups with configured menu items">pma__usergroups</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__usergroups">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                    <tr id="row_tbl_19" data-filter-row="PMA__USERS">
+                      <td class="text-center d-print-none">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="pma__users" id="checkbox_tbl_19">
+                      </td>
+                      <th>
+                        <a href="#" title="Users and their assignments to user groups">pma__users</a>
+                      </th>
+                      <td class="text-center d-print-none">
+                        <a id="0_favorite_anchor" class="ajax favorite_table_anchor" href="#" title="Add to Favorites">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Browse" alt="Browse" class="icon ic_bd_browse">&nbsp;Browse</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Search" alt="Search" class="icon ic_bd_select">&nbsp;Search</span>
+                        </a>
+                      </td>
+                      <td class="insert_table text-center d-print-none">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Insert" alt="Insert" class="icon ic_b_insrow">&nbsp;Insert</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="truncate_table_anchor ajax" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Empty" alt="Empty" class="icon ic_bd_empty">&nbsp;Empty</span>
+                        </a>
+                      </td>
+                      <td class="text-center d-print-none">
+                        <a class="ajax drop_table_anchor" href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">&nbsp;Drop</span>
+                        </a>
+                      </td>
+                      <td class="value tbl_rows font-monospace text-end" data-table="pma__users">0</td>
+                      <td class="text-nowrap">InnoDB</td>
+                      <td class="text-nowrap">
+                        <dfn title="Unknown, binary">utf8mb3_bin</dfn>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot id="tbl_summary_row" class="table-light">
+                    <tr>
+                      <th class="d-print-none"></th>
+                      <th class="tbl_num text-nowrap">19 tables</th>
+                      <th colspan="7" class="d-print-none">Sum</th>
+                      <th class="value tbl_rows font-monospace text-end">5</th>
+                      <th class="text-center">
+                        <dfn title="InnoDB is the default storage engine on this MySQL server.">
+                          InnoDB
+                        </dfn>
+                      </th>
+                      <th>
+                        <dfn title="Swedish, case-insensitive (Default)">
+                          latin1_swedish_ci
+                        </dfn>
+                      </th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="" id="tables-browse">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Browse table</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <table class="table table-light table-striped table-hover table-sm w-auto pma_table mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th class="column_action position-sticky d-print-none" colspan="4" aria-describedby="ui-id-50">
+                      <span>
+                        <a href="#">
+                          <img class="fulltext" src="../themes/boodark/img/s_fulltext.png" alt="Full texts" title="Full texts">
+                        </a>
+                      </span>
+                      <div class="cDrop">
+                        <div class="coldrop" style="left: 194.016px; top: 0px;"></div>
+                      </div>
+                      <div class="cList" style="display: none;">
+                        <div class="lDiv">
+                          <div>
+                            <input type="checkbox" checked="checked">
+                            option_id
+                          </div>
+                          <div>
+                            <input type="checkbox" checked="checked">
+                            option_name
+                          </div>
+                          <div>
+                            <input type="checkbox" checked="checked">
+                            option_value
+                          </div>
+                          <div>
+                            <input type="checkbox" checked="checked">
+                            autoload
+                          </div>
+                        </div>
+                        <div class="showAllColBtn">Show all</div>
+                      </div>
+                    </th>
+                    <th class="draggable position-sticky text-end column_heading marker pointer" data-column="option_id" style="cursor: move;">
+                      <span>
+                        <a href="#" class="sortlink">
+                          option_id
+                        </a>
+                      </span>
+                    </th>
+                    <th class="draggable position-sticky column_heading marker pointer" data-column="option_name">
+                      <span>
+                        <a href="#" class="sortlink">
+                          option_name
+                        </a>
+                      </span>
+                    </th>
+                    <th class="draggable position-sticky column_heading marker pointer" data-column="option_value" style="cursor: move;">
+                      <span>
+                        <a href="#" class="sortlink">
+                          option_value
+                        </a>
+                      </span>
+                    </th>
+                    <th class="draggable position-sticky column_heading marker pointer" data-column="autoload" style="cursor: move;">
+                      <span>
+                        <a href="#" class="sortlink">
+                          autoload
+                        </a>
+                      </span>
+                    </th>
+                    <td class="d-print-none" colspan="4"><span></span></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete0_left" name="rows_to_delete[0]" value="`wp_options`.`option_id` = 1">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 1</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>1</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="7" class="data grid_edit click2 not_null text pre_wrap"><span>siteurl</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="17" class="data grid_edit click2 not_null pre_wrap"><span>https://blog.test</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete1_left" name="rows_to_delete[1]" value="`wp_options`.`option_id` = 2">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 2</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>2</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="4" class="data grid_edit click2 not_null text pre_wrap"><span>home</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="17" class="data grid_edit click2 not_null pre_wrap"><span>https://blog.test</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete2_left" name="rows_to_delete[2]" value="`wp_options`.`option_id` = 3">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                        <input type="hidden" class="where_clause" value="`wp_options`.`option_id` = 3">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                        <input type="hidden" class="where_clause" value="`wp_options`.`option_id` = 3">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 3</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>3</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="8" class="data grid_edit click2 not_null text pre_wrap"><span>blogname</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="13" class="data grid_edit click2 not_null pre_wrap"><span>Your Blog</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete3_left" name="rows_to_delete[3]" value="`wp_options`.`option_id` = 4">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                        <span class="text-nowrap">
+                          <a href="#">
+                            <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                          </a>
+                        </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                        </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                        <span class="text-nowrap">
+                          <a href="#" class="delete_row requireConfirm">
+                            <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                          </a>
+                          <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 4</div>
+                        </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>4</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="15" class="data grid_edit click2 not_null text pre_wrap"><span>blogdescription</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="27" class="data grid_edit click2 not_null pre_wrap"><span>Another WordPress site</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete4_left" name="rows_to_delete[4]" value="`wp_options`.`option_id` = 5">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 5</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>5</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="18" class="data grid_edit click2 not_null text pre_wrap"><span>users_can_register</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="1" class="data grid_edit click2 not_null pre_wrap"><span>0</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete5_left" name="rows_to_delete[5]" value="`wp_options`.`option_id` = 6">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 6</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>6</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="11" class="data grid_edit click2 not_null text pre_wrap"><span>admin_email</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="18" class="data grid_edit click2 not_null pre_wrap"><span>email@example.com</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete6_left" name="rows_to_delete[6]" value="`wp_options`.`option_id` = 7">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 7</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>7</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="13" class="data grid_edit click2 not_null text pre_wrap"><span>start_of_week</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="1" class="data grid_edit click2 not_null pre_wrap"><span>1</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete7_left" name="rows_to_delete[7]" value="`wp_options`.`option_id` = 8">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 8</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>8</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="15" class="data grid_edit click2 not_null text pre_wrap"><span>use_balanceTags</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="1" class="data grid_edit click2 not_null pre_wrap"><span>0</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete8_left" name="rows_to_delete[8]" value="`wp_options`.`option_id` = 9">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 9</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>9</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="11" class="data grid_edit click2 not_null text pre_wrap"><span>use_smilies</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="1" class="data grid_edit click2 not_null pre_wrap"><span>1</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-center d-print-none">
+                      <span>
+                        <input type="checkbox" class="multi_checkbox checkall" id="id_rows_to_delete9_left" name="rows_to_delete[9]" value="`wp_options`.`option_id` = 10">
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none edit_row_anchor">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Edit" alt="Edit" class="icon ic_b_edit">&nbsp;Edit</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Copy" alt="Copy" class="icon ic_b_insrow">&nbsp;Copy</span>
+                        </a>
+                      </span>
+                    </td>
+                    <td class="text-center d-print-none">
+                      <span class="text-nowrap">
+                        <a href="#" class="delete_row requireConfirm">
+                          <span class="text-nowrap"><img src="images/dot.gif" title="Delete" alt="Delete" class="icon ic_b_drop">&nbsp;Delete</span>
+                        </a>
+                        <div class="hide">DELETE FROM wp_options WHERE `wp_options`.`option_id` = 10</div>
+                      </span>
+                    </td>
+                    <td data-decimals="0" data-type="int" class="text-end data grid_edit click2 not_null text-nowrap"><span>10</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="18" class="data grid_edit click2 not_null text pre_wrap"><span>require_name_email</span></td>
+                    <td data-decimals="0" data-type="blob" data-originallength="1" class="data grid_edit click2 not_null pre_wrap"><span>1</span></td>
+                    <td data-decimals="0" data-type="string" data-originallength="3" class="data grid_edit click2 not_null text pre_wrap"><span>yes</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="components">
+        <h2 class="sticky-xl-top fw-bold mb-0 py-3">Components</h2>
+
+        <article class="" id="accordion">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Accordion</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h4>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h4>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h4>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="alerts">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Alerts</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                A simple primary alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+              <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                A simple secondary alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                A simple success alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+              <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                A simple danger alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                A simple warning alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                A simple info alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+              <div class="alert alert-light alert-dismissible fade show" role="alert">
+                A simple light alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+              <div class="alert alert-dark alert-dismissible fade show mb-0" role="alert">
+                A simple dark alert with <a href="#" class="alert-link">an example link</a>.
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <div class="alert alert-success mb-0" role="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                <hr>
+                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <div id="loading_parent" style="height: 160px;">
+                <span class="ajax_notification position-absolute my-5" id="ajax_message_num_4" style="">Loading…</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="badge">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Badge</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <p class="h1">Example heading <span class="badge bg-primary">New</span></p>
+              <p class="h2">Example heading <span class="badge bg-secondary">New</span></p>
+              <p class="h3">Example heading <span class="badge bg-success">New</span></p>
+              <p class="h4">Example heading <span class="badge bg-danger">New</span></p>
+              <p class="h5">Example heading <span class="badge bg-warning text-dark">New</span></p>
+              <p class="h6">Example heading <span class="badge bg-info text-dark">New</span></p>
+              <p class="h6">Example heading <span class="badge bg-light text-dark">New</span></p>
+              <p class="h6 mb-0">Example heading <span class="badge bg-dark">New</span></p>
+            </div>
+
+            <div class="bd-example">
+              <span class="badge rounded-pill bg-primary">Primary</span>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-success">Success</span>
+              <span class="badge rounded-pill bg-danger">Danger</span>
+              <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+              <span class="badge rounded-pill bg-info text-dark">Info</span>
+              <span class="badge rounded-pill bg-light text-dark">Light</span>
+              <span class="badge rounded-pill bg-dark">Dark</span>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="breadcrumb">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Breadcrumb</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="bd-example">
+              <ol class="breadcrumb breadcrumb-navbar">
+                <li class="breadcrumb-item">
+                  <img src="images/dot.gif" title="" alt="" class="icon ic_s_host">
+                  <a href="#" draggable="false">
+                    Server: Server 1
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <img src="images/dot.gif" title="" alt="" class="icon ic_s_db">
+                  <a href="#" draggable="false">
+                    Database: wp_blog
+                  </a>
+                </li>
+                <li class="breadcrumb-item">
+                  <img src="images/dot.gif" title="" alt="" class="icon ic_s_tbl">
+                  <a href="#" draggable="false">
+                    Table: wp_options
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="buttons">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Buttons</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-dark">Dark</button>
+              <button type="button" class="btn btn-link">Link</button>
+            </div>
+
+            <div class="bd-example">
+              <button type="button" class="btn btn-outline-primary">Primary</button>
+              <button type="button" class="btn btn-outline-secondary">Secondary</button>
+              <button type="button" class="btn btn-outline-success">Success</button>
+              <button type="button" class="btn btn-outline-danger">Danger</button>
+              <button type="button" class="btn btn-outline-warning">Warning</button>
+              <button type="button" class="btn btn-outline-info">Info</button>
+              <button type="button" class="btn btn-outline-light">Light</button>
+              <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+
+            <div class="bd-example">
+              <button type="button" class="btn btn-primary btn-sm">Small button</button>
+              <button type="button" class="btn btn-primary">Standard button</button>
+              <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="button-group">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Button group</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">1</button>
+                  <button type="button" class="btn btn-secondary">2</button>
+                  <button type="button" class="btn btn-secondary">3</button>
+                  <button type="button" class="btn btn-secondary">4</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                  <button type="button" class="btn btn-secondary">5</button>
+                  <button type="button" class="btn btn-secondary">6</button>
+                  <button type="button" class="btn btn-secondary">7</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                  <button type="button" class="btn btn-secondary">8</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="card">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Card</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="row  row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                      2 days ago
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image</text></svg>
+
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="dropdowns">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Dropdowns</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
+                <div class="dropdown">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButtonLG" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLG">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+
+            <div class="bd-example">
+              <div class="btn-group w-100 align-items-center justify-content-between flex-wrap">
+                <div class="dropend">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropendMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropend button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropendMenuButton">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <div class="dropup">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropupMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropup button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropupMenuButton">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <div class="dropstart">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropstartMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropstart button
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropstartMenuButton">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <div class="btn-group">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownRightMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    End-aligned menu
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownRightMenuButton">
+                    <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="list-group">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>List group</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <ul class="list-group">
+                <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+            </div>
+
+            <div class="bd-example">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+            </div>
+
+            <div class="bd-example">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="modal">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Modal</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="d-flex justify-content-between flex-wrap">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDefault">
+                  Launch demo modal
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">
+                  Launch static backdrop modal
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
+                  Vertically centered scrollable modal
+                </button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreen">
+                  Full screen
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="navs">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Navs</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <nav class="nav">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </nav>
+            </div>
+
+            <div class="bd-example">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                </div>
+              </nav>
+              <div class="tab-content bg-light p-3" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <p class="mb-0"><strong>This is some placeholder content the Home tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <p class="mb-0"><strong>This is some placeholder content the Profile tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <p class="mb-0"><strong>This is some placeholder content the Contact tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="navbar">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Navbar</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./">
+                    BooDark
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./">
+                    BooDark
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="pagination">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Pagination</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <nav aria-label="Pagination example">
+                <ul class="pagination pagination-sm mb-0">
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="bd-example">
+              <nav aria-label="Standard pagination example">
+                <ul class="pagination mb-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="bd-example">
+              <nav aria-label="Another pagination example">
+                <ul class="pagination pagination-lg flex-wrap mb-0">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </article>
+        <article class="my-3" id="spinners">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Spinners</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-border text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-grow text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="mt-3" id="tooltips">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Tooltips</h3>
+          </div>
+
+          <div>
+            <div class="bd-example tooltip-demo">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on end">Tooltip on end</button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on start">Tooltip on start</button>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Tooltip with HTML</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="layout">
+        <h2 class="sticky-xl-top fw-bold mb-0 py-3">Layout</h2>
+
+        <article class="" id="grid">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>Grid</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <p class="h1">Heading 1</p>
+              <p class="h2">Heading 2</p>
+              <p class="h3">Heading 3</p>
+              <p class="h4">Heading 4</p>
+              <p class="h5">Heading 5</p>
+              <p class="h6">Heading 6</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="codemirror">
+        <h2 class="sticky-xl-top fw-bold mb-0 py-3">Code Mirror</h2>
+
+        <article class="" id="sqlquery">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>SQL Query</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <p class="h1">Heading 1</p>
+              <p class="h2">Heading 2</p>
+              <p class="h3">Heading 3</p>
+              <p class="h4">Heading 4</p>
+              <p class="h5">Heading 5</p>
+              <p class="h6">Heading 6</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="jqueryui">
+        <h2 class="sticky-xl-top fw-bold mb-0 py-3">jQuery UI</h2>
+
+        <article class="mb-5" id="ui-dialog">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+            <h3>UI Dialog</h3>
+          </div>
+
+          <div>
+            <div class="bd-example">
+              <p class="h1">Heading 1</p>
+              <p class="h2">Heading 2</p>
+              <p class="h3">Heading 3</p>
+              <p class="h4">Heading 4</p>
+              <p class="h5">Heading 5</p>
+              <p class="h6">Heading 6</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <footer class="bd-footer bg-light py-3">
       <p class="text-center mb-0">Made with <i>♥</i> by <a href="https://github.com/adorade/boodark" class="text-info" target="_blank">Adorade</a></p>
       <p class="text-center mb-0">License MIT</p>
     </footer>
@@ -80,6 +3281,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/cheatsheet.js"></script>
   </body>
 </html>
