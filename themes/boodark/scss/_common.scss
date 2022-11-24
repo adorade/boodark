@@ -1688,10 +1688,10 @@ table.show_create {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, .6);
+  background: rgba($pma-body-bg, .8);
   height: 100%;
   z-index: 999;
-  color: white;
+  color: $pma-cyan;
   font-size: 30pt;
   text-align: center;
   padding-top: 20%;
@@ -1703,10 +1703,38 @@ table.show_create {
   bottom: 0;
   right: 25px;
   width: 400px;
-  border: 1px solid #999;
-  background: #f3f3f3;
-  border-radius: 4px;
-  box-shadow: 2px 2px 5px #ccc;
+  border: 1px solid rgba($pma-body-bg, .5);
+  background: $pma-component-bg;
+  border-radius: .25rem .25rem 0 0;
+
+  h2 {
+    background-color: rgba($pma-body-bg, .5);
+    padding: .5rem 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $white;
+    font-size: 1.5rem;
+
+    .minimize {
+      margin-right: .5rem;
+    }
+
+    .close {
+      display: none;
+    }
+
+    .minimize,
+    .close {
+      float: right;
+      padding: 0 .5rem;
+    }
+
+    .minimize:hover,
+    .close:hover {
+      background: rgba($pma-component-hover-bg, .8);
+      cursor: pointer;
+    }
+  }
 
   div {
     height: 270px;
@@ -1716,44 +1744,13 @@ table.show_create {
 
     li {
       padding: 8px 10px;
-      border-bottom: 1px solid #bbb;
-      color: rgb(148, 14, 14);
-      background: white;
+      border-bottom: 1px solid rgba($pma-body-bg, .5);
+      color: $pma-green;
+      background: rgba($pma-body-bg, .15);
 
       .filesize {
         float: right;
       }
-    }
-  }
-
-  h2 {
-    background-color: #bbb;
-    padding: .1em .3em;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $white;
-    font-size: 1.6em;
-    font-weight: normal;
-    text-shadow: 0 1px 0 #777;
-    box-shadow: 1px 1px 15px #999 inset;
-
-    .minimize {
-      float: right;
-      margin-right: 5px;
-      padding: 0 10px;
-    }
-
-    .close {
-      float: right;
-      margin-right: 5px;
-      padding: 0 10px;
-      display: none;
-    }
-
-    .minimize:hover,
-    .close:hover {
-      background: rgba(155, 149, 149, .78);
-      cursor: pointer;
     }
   }
 }
@@ -1763,31 +1760,26 @@ table.show_create {
   top: 10%;
   left: 20%;
   width: 60%;
-  background: white;
+  background: $pma-component-bg;
   min-height: 300px;
   z-index: 800;
-  box-shadow: 0 0 15px #999;
-  border-radius: 10px;
+  border-radius: .5rem;
   cursor: move;
 
   h2 {
-    background-color: #bbb;
-    padding: .1em .3em;
+    background-color: rgba($pma-body-bg, .5);
+    padding: .5rem 1rem;
     margin-top: 0;
     margin-bottom: 0;
     color: $white;
-    font-size: 1.6em;
-    font-weight: normal;
-    text-shadow: 0 1px 0 #777;
-    box-shadow: 1px 1px 15px #999 inset;
+    font-size: 1.5rem;
 
     .close {
       float: right;
-      margin-right: 5px;
-      padding: 0 10px;
+      padding: 0 .5rem;
 
       &:hover {
-        background: rgba(155, 149, 149, .78);
+        background: rgba($pma-component-hover-bg, .8);
         cursor: pointer;
       }
     }
@@ -1795,13 +1787,14 @@ table.show_create {
 }
 
 .pma_drop_file_status {
-  color: #235a81;
+  color: $pma-teal;
 
   span.underline:hover {
     cursor: pointer;
     text-decoration: underline;
   }
 }
+// end PMA drop-import
 
 .dependencies_box {
   background-color: white;
