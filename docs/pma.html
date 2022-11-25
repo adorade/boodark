@@ -3117,53 +3117,405 @@
 
           <div>
             <div class="bd-example">
-              <nav aria-label="Pagination example">
-                <ul class="pagination pagination-sm mb-0">
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <nav aria-label="Pagination of user accounts">
+                <ul id="userAccountsPagination" class="pagination mb-0">
+                  <li class="page-item"><a class="page-link" href="#">A</a></li>
+                  <li class="page-item active" aria-current="page"><a class="page-link" href="#">B</a></li>
+                  <li class="page-item"><a class="page-link" href="#">C</a></li>
+                  <li class="page-item"><a class="page-link" href="#">D</a></li>
+                  <li class="page-item"><a class="page-link" href="#">E</a></li>
+                  <li class="page-item"><a class="page-link" href="#">F</a></li>
+                  <li class="page-item"><a class="page-link" href="#">G</a></li>
+                  <li class="page-item"><a class="page-link" href="#">H</a></li>
+                  <li class="page-item"><a class="page-link" href="#">I</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">J</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">K</a></li>
+                  <li class="page-item"><a class="page-link" href="#">L</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">M</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">N</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">O</a></li>
+                  <li class="page-item"><a class="page-link" href="#">P</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Q</a></li>
+                  <li class="page-item"><a class="page-link" href="#">R</a></li>
+                  <li class="page-item"><a class="page-link" href="#">S</a></li>
+                  <li class="page-item"><a class="page-link" href="#">T</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">U</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">V</a></li>
+                  <li class="page-item"><a class="page-link" href="#">W</a></li>
+                  <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">X</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Y</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Z</a></li>
+                  <li class="page-item"><a class="page-link text-nowrap" href="#">Show all</a></li>
                 </ul>
               </nav>
             </div>
 
             <div class="bd-example">
-              <nav aria-label="Standard pagination example">
-                <ul class="pagination mb-0">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+              <div id="pma_navigation" class="position-relative h-auto">
+                <div class="pageselector mx-0 border-0">
+                  <form action="#" method="post">
+                    <select class="pageselector ajax" name="pos2_value">
+                      <option selected="selected" style="font-weight: bold" value="0">1</option>
+                      <option value="50">2</option>
+                      <option value="100">3</option>
+                      <option value="150">4</option>
+                      <option value="200">5</option>
+                      <option value="250">6</option>
+                    </select>
+                  </form>
+                  <a href="#" class="ajax" title="Next">&gt;</a>
+                  <a href="#" class="ajax" title="End">&gt;&gt;</a>
+                </div>
+                <div class="pageselector mx-0 border-0">
+                  <a href="#" class="ajax" title="Begin">&lt;</a>
+                  <a href="#" class="ajax" title="Previous">&lt;&lt;</a>
+                  <form action="#" method="post">
+                    <select class="pageselector ajax" name="pos2_value">
+                      <option value="0">1</option>
+                      <option value="50">2</option>
+                      <option value="100">3</option>
+                      <option selected="selected" style="font-weight: bold" value="150">4</option>
+                      <option value="200">5</option>
+                      <option value="250">6</option>
+                    </select>
+                  </form>
+                  <a href="#" class="ajax" title="Next">&gt;</a>
+                  <a href="#" class="ajax" title="End">&gt;&gt;</a>
+                </div>
+                <div class="pageselector mx-0 border-0">
+                  <a href="#" class="ajax" title="Begin">&lt;</a>
+                  <a href="#" class="ajax" title="Previous">&lt;&lt;</a>
+                  <form action="#" method="post">
+                    <select class="pageselector ajax" name="pos2_value">
+                      <option value="0">1</option>
+                      <option value="50">2</option>
+                      <option value="100">3</option>
+                      <option value="150">4</option>
+                      <option value="200">5</option>
+                      <option selected="selected" style="font-weight: bold" value="250">6</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
             </div>
 
             <div class="bd-example">
-              <nav aria-label="Another pagination example">
-                <ul class="pagination pagination-lg flex-wrap mb-0">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
+              <div class="my-0" id="page_content">
+                <div class="mt-0" id="tableslistcontainer">
+                  <div class="pageselector">
+                    Page number:
+                    <form action="#" method="post">
+                      <select class="pageselector ajax" name="pos">
+                        <option selected="selected" style="font-weight: bold" value="0">1</option>
+                        <option value="75">2</option>
+                        <option value="150">3</option>
+                        <option value="225">4</option>
+                      </select>
+                    </form>
+                    <a href="#" title="Next">&gt;</a>
+                    <a href="#" title="End">&gt;&gt;</a>
+                  </div>
+                  <div class="pageselector">
+                    Page number:
+                    <a href="#" title="Begin">&lt;&lt;</a>
+                    <a href="#" title="Previous">&lt;</a>
+                    <form action="#" method="post">
+                      <select class="pageselector ajax" name="pos">
+                        <option value="0">1</option>
+                        <option selected="selected" style="font-weight: bold" value="75">2</option>
+                        <option value="150">3</option>
+                        <option value="225">4</option>
+                      </select>
+                    </form>
+                    <a href="#" title="Next">&gt;</a>
+                    <a href="#" title="End">&gt;&gt;</a>
+                  </div>
+                  <div class="pageselector">
+                    Page number:
+                    <a href="#" title="Begin">&lt;&lt;</a>
+                    <a href="#" title="Previous">&lt;</a>
+                    <form action="#" method="post">
+                      <select class="pageselector ajax" name="pos">
+                        <option value="0">1</option>
+                        <option value="75">2</option>
+                        <option value="150">3</option>
+                        <option selected="selected" style="font-weight: bold" value="225">4</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bd-example">
+              <table class="navigation d-print-none mt-0">
+                <tbody>
+                  <tr>
+                    <td class="navigation_separator"></td>
+                    <td>
+                      <form action="#" method="post">
+                        <select class="pageselector ajax" name="pos">
+                          <option selected="selected" style="font-weight: bold" value="0">1</option>
+                          <option value="50">2</option>
+                          <option value="100">3</option>
+                          <option value="150">4</option>
+                          <option value="200">5</option>
+                          <option value="250">6</option>
+                          <option value="300">7</option>
+                          <option value="350">8</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value=">" title="Next">
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post" onsubmit="">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value=">>" title="End">
+                      </form>
+                    </td>
+                    <td><div class="navigation_separator">|</div></td>
+                    <td>
+                      <form action="#" method="post">
+                        <input type="checkbox" name="navig" id="showAll_1695134302" class="showAllRows" value="all">
+                        <label for="showAll_1695134302">Show all</label>
+                      </form>
+                    </td>
+                    <td><div class="navigation_separator">|</div></td>
+                    <td>
+                      <div class="save_edited hide">
+                        <input class="btn btn-link" type="submit" value="Save edited data">
+                        <div class="navigation_separator">|</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="restore_column hide" style="display: none;">
+                        <input class="btn btn-link" type="submit" value="Restore column order">
+                        <div class="navigation_separator">|</div>
+                      </div>
+                    </td>
+                    <td class="navigation_goto">
+                      <form action="#" method="post" class="maxRowsForm">
+                        <label for="sessionMaxRowsSelect">Number of rows:</label>
+                        <select class="autosubmit" name="session_max_rows" id="sessionMaxRowsSelect">
+                          <option value="25">25</option>
+                          <option value="50" selected="">50</option>
+                          <option value="100">100</option>
+                          <option value="250">250</option>
+                          <option value="500">500</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td class="navigation_separator"></td>
+                    <td class="largescreenonly">
+                      <span>Filter rows:</span>
+                      <input type="text" class="filter_rows" placeholder="Search this table" data-for="1695134302">
+                    </td>
+                    <td class="largescreenonly">
+                      <form action="#" method="post" class="d-print-none">
+                        <input type="hidden" name="db" value="ps_shop"><input type="hidden" name="table" value="ps_configuration"><input type="hidden" name="server" value="1"><input type="hidden" name="sort_by_key" value="1"><input type="hidden" name="session_max_rows" value="50"><input type="hidden" name="token" value="68547c2d426566562c376c30276f4121">
+                        Sort by key:
+                        <select name="sql_query" class="autosubmit">
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_configuration` ASC">PRIMARY (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_configuration` DESC">PRIMARY (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `name` ASC">name (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `name` DESC">name (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop` ASC">id_shop (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop` DESC">id_shop (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop_group` ASC">id_shop_group (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop_group` DESC">id_shop_group (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`  " selected="">None</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td class="navigation_separator"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="navigation d-print-none">
+                <tbody>
+                  <tr>
+                    <td class="navigation_separator"></td>
+                    <td>
+                      <form action="#" method="post">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value="<<" title="Begin">
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post" onsubmit="">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value="<" title="Previous">
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post">
+                        <select class="pageselector ajax" name="pos">
+                          <option value="0">1</option>
+                          <option value="50">2</option>
+                          <option value="100">3</option>
+                          <option value="150">4</option>
+                          <option selected="selected" style="font-weight: bold" value="200">5</option>
+                          <option value="250">6</option>
+                          <option value="300">7</option>
+                          <option value="350">8</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value=">" title="Next">
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post" onsubmit="">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value=">>" title="End">
+                      </form>
+                    </td>
+                    <td><div class="navigation_separator">|</div></td>
+                    <td>
+                      <form action="#" method="post">
+                        <input type="checkbox" name="navig" id="showAll_1695134302" class="showAllRows" value="all">
+                        <label for="showAll_1695134302">Show all</label>
+                      </form>
+                    </td>
+                    <td><div class="navigation_separator">|</div></td>
+                    <td>
+                      <div class="save_edited hide">
+                        <input class="btn btn-link" type="submit" value="Save edited data">
+                        <div class="navigation_separator">|</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="restore_column hide" style="display: none;">
+                        <input class="btn btn-link" type="submit" value="Restore column order">
+                        <div class="navigation_separator">|</div>
+                      </div>
+                    </td>
+                    <td class="navigation_goto">
+                      <form action="#" method="post" class="maxRowsForm">
+                        <label for="sessionMaxRowsSelect">Number of rows:</label>
+                        <select class="autosubmit" name="session_max_rows" id="sessionMaxRowsSelect">
+                          <option value="25">25</option>
+                          <option value="50" selected="">50</option>
+                          <option value="100">100</option>
+                          <option value="250">250</option>
+                          <option value="500">500</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td class="navigation_separator"></td>
+                    <td class="largescreenonly">
+                      <span>Filter rows:</span>
+                      <input type="text" class="filter_rows" placeholder="Search this table" data-for="1695134302">
+                    </td>
+                    <td class="largescreenonly">
+                      <form action="#" method="post" class="d-print-none">
+                        <input type="hidden" name="db" value="ps_shop"><input type="hidden" name="table" value="ps_configuration"><input type="hidden" name="server" value="1"><input type="hidden" name="sort_by_key" value="1"><input type="hidden" name="session_max_rows" value="50"><input type="hidden" name="token" value="68547c2d426566562c376c30276f4121">
+                        Sort by key:
+                        <select name="sql_query" class="autosubmit">
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_configuration` ASC">PRIMARY (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_configuration` DESC">PRIMARY (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `name` ASC">name (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `name` DESC">name (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop` ASC">id_shop (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop` DESC">id_shop (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop_group` ASC">id_shop_group (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop_group` DESC">id_shop_group (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`  " selected="">None</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td class="navigation_separator"></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="navigation d-print-none mb-0">
+                <tbody>
+                  <tr>
+                    <td class="navigation_separator"></td>
+                    <td>
+                      <form action="#" method="post">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value="<<" title="Begin">
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post" onsubmit="">
+                        <input type="submit" name="navig" class="btn btn-secondary ajax" value="<" title="Previous">
+                      </form>
+                    </td>
+                    <td>
+                      <form action="#" method="post">
+                        <select class="pageselector ajax" name="pos">
+                          <option value="0">1</option>
+                          <option value="50">2</option>
+                          <option value="100">3</option>
+                          <option value="150">4</option>
+                          <option value="200">5</option>
+                          <option value="250">6</option>
+                          <option value="300">7</option>
+                          <option selected="selected" style="font-weight: bold" value="350">8</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td><div class="navigation_separator">|</div></td>
+                    <td>
+                      <form action="#" method="post">
+                        <input type="checkbox" name="navig" id="showAll_1695134302" class="showAllRows" value="all">
+                        <label for="showAll_1695134302">Show all</label>
+                      </form>
+                    </td>
+                    <td><div class="navigation_separator">|</div></td>
+                    <td>
+                      <div class="save_edited hide">
+                        <input class="btn btn-link" type="submit" value="Save edited data">
+                        <div class="navigation_separator">|</div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="restore_column hide" style="display: none;">
+                        <input class="btn btn-link" type="submit" value="Restore column order">
+                        <div class="navigation_separator">|</div>
+                      </div>
+                    </td>
+                    <td class="navigation_goto">
+                      <form action="#" method="post" class="maxRowsForm">
+                        <label for="sessionMaxRowsSelect">Number of rows:</label>
+                        <select class="autosubmit" name="session_max_rows" id="sessionMaxRowsSelect">
+                          <option value="25">25</option>
+                          <option value="50" selected="">50</option>
+                          <option value="100">100</option>
+                          <option value="250">250</option>
+                          <option value="500">500</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td class="navigation_separator"></td>
+                    <td class="largescreenonly">
+                      <span>Filter rows:</span>
+                      <input type="text" class="filter_rows" placeholder="Search this table" data-for="1695134302">
+                    </td>
+                    <td class="largescreenonly">
+                      <form action="#" method="post" class="d-print-none">
+                        <input type="hidden" name="db" value="ps_shop"><input type="hidden" name="table" value="ps_configuration"><input type="hidden" name="server" value="1"><input type="hidden" name="sort_by_key" value="1"><input type="hidden" name="session_max_rows" value="50"><input type="hidden" name="token" value="68547c2d426566562c376c30276f4121">
+                        Sort by key:
+                        <select name="sql_query" class="autosubmit">
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_configuration` ASC">PRIMARY (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_configuration` DESC">PRIMARY (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `name` ASC">name (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `name` DESC">name (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop` ASC">id_shop (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop` DESC">id_shop (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop_group` ASC">id_shop_group (ASC)</option>
+                          <option value="SELECT * FROM `ps_configuration`   ORDER BY `id_shop_group` DESC">id_shop_group (DESC)</option>
+                          <option value="SELECT * FROM `ps_configuration`  " selected="">None</option>
+                        </select>
+                      </form>
+                    </td>
+                    <td class="navigation_separator"></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </article>
