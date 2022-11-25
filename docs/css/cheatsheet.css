@@ -161,6 +161,10 @@ body {
     scroll-margin-top: 3.5rem;
   }
 
+  .bd-cheatsheet section > h2 {
+    color: #0dcaf0;
+  }
+
   .bd-cheatsheet section > h2::before {
     position: absolute;
     top: 0;
