@@ -992,7 +992,6 @@
             </div>
           </div>
         </article>
-
         <article class="my-3" id="tables-database">
           <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
             <h3>Database</h3>
@@ -1967,7 +1966,6 @@
             </div>
           </div>
         </article>
-
         <article class="mt-3" id="tables-browse">
           <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
             <h3>Browse table</h3>
@@ -2621,6 +2619,102 @@
               <button type="button" class="btn btn-primary">Standard button</button>
               <button type="button" class="btn btn-primary btn-lg">Large button</button>
             </div>
+
+            <div class="bd-example clearfix">
+              <div class="me-3 p-4 bg-light float-start">
+                <div class="pma_quick_warp m-0">
+                  <button type="button" class="btn drop_button me-0">Recent</button>
+                  <button type="button" class="btn drop_button ms-1">Favorites</button>
+                </div>
+              </div>
+              <div class="input-group me-3 p-4 bg-light w-auto float-start">
+                <button type="button" class="btn btn-outline-secondary">View all</button>
+              </div>
+              <div class="input-group me-3 p-4 bg-body w-auto float-start">
+                <button class="btn btn-outline-secondary" id="bulkActionDropButton" type="submit" value="Drop" title="Drop">
+                  <span class="text-nowrap">
+                    <img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_db_drop">
+                    &nbsp;Drop
+                  </span>
+                </button>
+              </div>
+              <div class="me-3 p-4 bg-light float-start">
+                <input id="buttonGo" class="btn btn-primary" type="submit" value="Create">
+              </div>
+              <div class="card-footer me-3 p-4 border-0 float-start">
+                <input class="btn btn-primary" type="submit" id="button_submit_query" value="Go">
+              </div>
+              <div class="me-3 p-4 bg-light float-start">
+                <input class="btn btn-secondary" type="submit" value="Refresh">
+              </div>
+              <div class="me-3 p-4 bg-body float-start">
+                <button type="button" class="btn btn-secondary">
+                  <span class="text-nowrap">
+                    <img src="images/dot.gif" title="Instructions" alt="Instructions" class="icon ic_b_help">
+                    &nbsp;Instructions
+                  </span>
+                </button>
+              </div>
+              <div class="mt-3 me-3 p-4 bg-light float-start">
+                <input class="btn btn-secondary ms-0" type="submit" name="createTemplate" id="createTemplate" value="Create">
+                <input class="btn btn-secondary ms-0" type="submit" name="updateTemplate" id="updateTemplate" value="Update">
+                <input class="btn btn-secondary mx-0" type="submit" name="deleteTemplate" id="deleteTemplate" value="Delete">
+              </div>
+              <div class="mt-3 me-3 p-4 bg-body float-start">
+                <input id="buttonGo" class="btn btn-primary" type="submit" value="Export">
+              </div>
+              <div class="mt-3 me-3 p-4 bg-body float-start">
+                <input id="buttonGo" class="btn btn-primary" type="submit" value="Import">
+              </div>
+              <div class="mt-3 me-3 p-4 bg-light float-start">
+                <input class="btn btn-primary" type="submit" id="submit_export" value="Go">
+              </div>
+              <div class="mt-3 me-3 p-4 bg-light float-start">
+                <input class="btn btn-secondary" type="submit" id="submit_clear" value="Reset">
+              </div>
+              <div class="card-footer mt-3 me-3 p-4 border-0 float-start">
+                <input class="btn btn-primary mx-0" type="submit" name="submit_save" value="Apply">
+                <input class="btn btn-secondary mx-0" type="button" name="submit_reset" value="Reset">
+              </div>
+              <div class="pma-fieldset tblFooters mt-3 me-3 mb-0 p-4 border-0 float-start">
+                <input class="btn btn-primary" type="submit" value="Go">
+              </div>
+              <div class="card mt-3 me-3 mb-0 p-4 border-0 float-start">
+                <div class="card-body p-0">
+                  <a class="btn btn-primary mx-0" href="#">AUTHENTICATION</a>
+                  <a class="btn btn-primary mx-0" href="#">DATA TYPE</a>
+                  <a class="btn btn-primary mx-0" href="#">FUNCTION</a>
+                  <a class="btn btn-primary mx-0" href="#">INFORMATION SCHEMA</a>
+                  <a class="btn btn-primary mx-0" href="#">STORAGE ENGINE</a>
+                </div>
+              </div>
+              <div class="pma-fieldset mt-3 me-3 p-3 border-0 float-start">
+                <div class="pma-fieldset m-0 border-0">
+                  <input class="btn btn-secondary" type="button" value="+ Add column" id="add_column_button">
+                </div>
+              </div>
+              <div class="pma-fieldset tblFooters mt-3 me-3 mb-0 p-4 border-0 float-start">
+                <input class="btn btn-secondary mx-0" type="button" id="update_query_button" value="Update query">
+                <input class="btn btn-primary mx-0" type="button" id="submit_query" value="Submit query">
+              </div>
+              <div class="input-group mt-3 me-3 p-4 bg-body w-auto float-start">
+                <button class="btn btn-outline-secondary mx-0" id="bulkActionExportButton" type="submit" value="export" title="Export">
+                  <span class="text-nowrap">
+                    <img src="images/dot.gif" title="Export" alt="Export" class="icon ic_b_export">
+                    &nbsp;Export
+                  </span>
+                </button>
+                <button class="btn btn-outline-secondary mx-0" id="bulkActionDropButton" type="submit" value="drop" title="Drop">
+                  <span class="text-nowrap">
+                    <img src="images/dot.gif" title="Drop" alt="Drop" class="icon ic_b_drop">
+                    &nbsp;Drop
+                  </span>
+                </button>
+              </div>
+              <div class="card-footer mt-3 me-3 p-4 border-0 float-start">
+                <input class="btn btn-primary" type="submit" value="Create version">
+              </div>
+            </div>
           </div>
         </article>
         <article class="my-3" id="button-group">
@@ -2645,6 +2739,32 @@
                 <div class="btn-group" role="group" aria-label="Third group">
                   <button type="button" class="btn btn-secondary">8</button>
                 </div>
+              </div>
+            </div>
+
+            <div class="bd-example clearfix">
+              <div class="btn-toolbar me-3 p-4 bg-light float-start" role="toolbar">
+                <div class="btn-group me-2" role="group">
+                  <input type="button" value="Clear" id="clear" class="btn btn-secondary button sqlbutton">
+                  <input type="button" value="Format" id="format" class="btn btn-secondary button sqlbutton">
+                </div>
+                <input type="button" value="Get auto-saved query" id="saved" class="btn btn-secondary button sqlbutton">
+              </div>
+              <div class="btn-toolbar p-4 bg-light float-start" role="toolbar">
+                <div class="btn-group me-2" role="group">
+                  <input type="button" value="SELECT *" id="selectall" class="btn btn-secondary button sqlbutton">
+                  <input type="button" value="SELECT" id="select" class="btn btn-secondary button sqlbutton">
+                  <input type="button" value="INSERT" id="insert" class="btn btn-secondary button sqlbutton">
+                  <input type="button" value="UPDATE" id="update" class="btn btn-secondary button sqlbutton">
+                  <input type="button" value="DELETE" id="delete" class="btn btn-secondary button sqlbutton">
+                </div>
+
+                <div class="btn-group me-2" role="group">
+                  <input type="button" value="Clear" id="clear" class="btn btn-secondary button sqlbutton">
+                  <input type="button" value="Format" id="format" class="btn btn-secondary button sqlbutton">
+                </div>
+
+                <input type="button" value="Get auto-saved query" id="saved" class="btn btn-secondary button sqlbutton">
               </div>
             </div>
           </div>
@@ -3019,6 +3139,23 @@
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
               </ul>
+            </div>
+
+            <div class="bd-example clearfix">
+              <div class="me-3 p-4 bg-light float-start">
+                <ul class="nav nav-pills" id="importFileTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="uploadFileTab" type="button" role="tab">
+                      Upload a file
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="localFileTab" type="button" role="tab">
+                      Select file to import
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </article>
