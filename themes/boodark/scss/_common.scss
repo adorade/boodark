@@ -298,7 +298,7 @@ td .icon {
 .tblHeaders,
 .tblFooters {
   color: $body-color;
-  background: $pma-table-bg;
+  background: darken($pma-component-bg, 5%);
 
   a {
     &:link,
@@ -461,6 +461,12 @@ div#tablestatistics table {
 // Heading
 #topmenucontainer {
   width: 100%;
+
+  .dropdown-toggle {
+    &::after {
+      color: $pma-cyan;
+    }
+  }
 }
 
 #page_nav_icons {
@@ -650,6 +656,11 @@ table#chartGrid {
     background: $pma-component-bg;
     border: none;
     min-width: 1px;
+  }
+
+  .float-start {
+    line-height: 1;
+    margin-right: .5rem;
   }
 }
 
