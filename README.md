@@ -22,7 +22,7 @@
 
 ## Installation
 
-1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.0.2.zip)
+1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.0.3.zip)
 2. Extract the archive files
 3. Go to the phpMyAdmin files (C:\xampp\phpmyadmin for XAMPP) then go to the `themes` folder and add here the `boodark` folder
 4. Select `BooDark` theme on the home page
