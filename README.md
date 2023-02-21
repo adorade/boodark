@@ -20,6 +20,14 @@
 - Console adjusted for dark theme
 - Inline SVG using `escape-svg` function
 
+## Demo
+
+The best way to see **BooDark** in action is to try it on **phpMyAdmin** demo server.
+
+- Navigate to [phpMyAdmin demo server](https://demo.phpmyadmin.net/QA_5_2/)
+- Login is root with empty password
+- Go to **Appearance settings > Themes** and choose **BooDark**.
+
 ## Installation
 
 1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.0.3.zip)
@@ -35,10 +43,10 @@ BooDark theme respects the folders structure of phpMyAdmin.
 ├── node_modules
 ├── themes
 │   └── boodark
-│       ├── css
-│       ├── img
-│       ├── jquery
-│       ├── scss
+│       ├── css/
+│       ├── img/
+│       ├── jquery/
+│       ├── scss/
 │       ├── screen.png
 │       └── theme.json
 ├── package.json
@@ -68,4 +76,9 @@ Have a bug or a feature request? Please search for existing and closed issues. I
 
 ## License
 
-BooDark Theme is licensed under [MIT](LICENSE)
+BooDark Theme is licensed under [MIT](LICENSE).  
+Copyright (c) 2022 - 2023 [Adorade](https://github.com/adorade)
+
+## Thanks for use
+
+Hopefully, this theme is useful to you.
