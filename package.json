@@ -6,21 +6,22 @@
   "author": "Adorade",
   "scripts": {
     "postinstall": "yarn run build",
-    "build": "yarn run css-compile && yarn run css-prefix && yarn run css-rtl",
+    "build": "yarn run css-clean && yarn run css-compile && yarn run css-prefix && yarn run css-rtl",
+    "css-clean": "rm -rf themes/boodark/css",
     "css-compile": "sass themes/boodark/scss:themes/boodark/css --style=compressed",
-    "css-dev": "sass themes/boodark/scss:themes/boodark/css --style=expanded --watch",
+    "css-dev": "yarn run css-clean && sass themes/boodark/scss:themes/boodark/css --style=expanded --watch",
     "css-lint": "stylelint themes/boodark/scss/*.scss",
     "css-prefix": "postcss themes/boodark/css/*.css --use autoprefixer --replace",
     "css-rtl": "rtlcss -c .rtlcssrc.json themes/boodark/css/theme.css"
   },
   "dependencies": {
     "@popperjs/core": "2.11.6",
-    "autoprefixer": "10.4.12",
-    "bootstrap": "5.1.3",
-    "postcss": "8.4.16",
-    "postcss-cli": "10.0.0",
+    "autoprefixer": "10.4.13",
+    "bootstrap": "5.2.3",
+    "postcss": "8.4.21",
+    "postcss-cli": "10.1.0",
     "rtlcss": "4.0.0",
-    "sass": "1.54.9"
+    "sass": "1.58.3"
   },
   "devDependencies": {
     "stylelint": "14.12.0",
