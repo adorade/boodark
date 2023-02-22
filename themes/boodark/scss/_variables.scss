@@ -2,6 +2,9 @@
 // Variables
 // =============================================================================
 
+// Theme version
+$pma-theme-version: "1.0.4-dev";
+
 // PMA color system
 // -----------------------------------------------------------------------------
 $white:             #fff;
@@ -34,6 +37,7 @@ $pma-yellow:        #ffc107;
 $pma-green:         #198754;
 $pma-teal:          #20c997;
 $pma-cyan:          #0dcaf0;
+$pma-nord:          #88c0d0;
 
 // Theme Colors
 $pma-theme-colors: (
@@ -57,8 +61,24 @@ $pma-theme-colors: (
   "yellow":   $pma-yellow,
   "green":    $pma-green,
   "teal":     $pma-teal,
-  "cyan":     $pma-cyan
+  "cyan":     $pma-cyan,
+  "nord":     $pma-nord
 );
+
+// Theme color scheme
+// Values: "cyan", "teal", "nord", "orange"
+// Default: "cyan"
+// Set this value for the desired color scheme
+$color-scheme: cyan !default;
+$pma-color-scheme: $pma-cyan;
+
+@if $color-scheme == teal {
+  $pma-color-scheme: $pma-teal;
+} @else if $color-scheme == nord {
+  $pma-color-scheme: $pma-nord;
+} @else if $color-scheme == orange {
+  $pma-color-scheme: $pma-orange;
+}
 
 // PMA Base Style
 // -----------------------------------------------------------------------------
@@ -76,8 +96,8 @@ $pma-fieldset-bg:             $pma-gray-600;
 $pma-border-color:            $pma-gray-600;
 $pma-disable-color:           $pma-gray-500;
 $pma-cond-border-color:       $black;
-$pma-button-color:            $pma-cyan;
-$pma-link-color:              $pma-cyan;
+$pma-button-color:            $pma-color-scheme;
+$pma-link-color:              $pma-color-scheme;
 $pma-link-hover-color:        $pma-red;
 $pma-custom-color:            $pma-orange;
 

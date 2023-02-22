@@ -468,7 +468,7 @@ div#tablestatistics table {
 
   .dropdown-toggle {
     &::after {
-      color: $pma-cyan;
+      color: $pma-link-color;
     }
   }
 }
@@ -1473,7 +1473,7 @@ input#auto_increment_opt {
       background: none;
 
       &:hover {
-        color: $pma-cyan;
+        color: $pma-link-color;
         cursor: pointer;
       }
     }
@@ -1713,7 +1713,7 @@ table.show_create {
   background: rgba($pma-body-bg, .8);
   height: 100%;
   z-index: 999;
-  color: $pma-cyan;
+  color: $pma-link-color;
   font-size: 30pt;
   text-align: center;
   padding-top: 20%;
