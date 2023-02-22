@@ -58,7 +58,7 @@ To build the theme or customize it with your preferences you must have **Node**,
 1. Open your command-line and navigate to your projects folder
 2. Clone this repo locally: `git clone https://github.com/adorade/boodark .`
 3. Install project dependecies: `yarn install`
-4. Do any modifications you want
+4. Do any modifications you want (eg. change color scheme)
 5. Compile `scss` files to `css`
 
     ```sh
@@ -69,6 +69,34 @@ To build the theme or customize it with your preferences you must have **Node**,
     ```
 
 6. Theme files are in `themes/boodark`.
+
+## Color Scheme
+
+BooDark has several color schemes: _cyan_ (default), _teal_, _nord_ and _orange_. There is currently no way to change the color scheme in GUI.
+
+**How to change color scheme?**
+
+Option 1. Edit `scss/_variables.scss` (see [Building](#building))
+
+```scss
+// Theme color scheme
+// Values: "cyan", "teal", "nord", "orange"
+// Default: "cyan"
+// Set this value for the desired color scheme
+// Change cyan
+$color-scheme: cyan !default;
+// to nord
+$color-scheme: nord !default;
+
+// then run `yarn run build`
+```
+
+Option 2. Replace the CSS files. For example:
+
+```sh
+mv themes/boodark/css/theme.css themes/boodark/css/theme-cyan.css
+mv themes/boodark/css/theme-nord.css themes/boodark/css/theme.css
+```
 
 ## Bugs and feature requests
 
