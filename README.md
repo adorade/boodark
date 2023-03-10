@@ -2,8 +2,10 @@
 
 ![Screenshot](themes/boodark/screen.png)
 
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/adorade/boodark.svg?label=&color=green&logo=github)](https://github.com/adorade/boodark/blob/main/package.json)
-[![license](https://img.shields.io/github/license/adorade/boodark.svg?label=)](https://mit-license.org)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/adorade/boodark?color=green&logo=github)](https://github.com/adorade/boodark/blob/main/package.json)
+[![license](https://img.shields.io/github/license/adorade/boodark)](https://mit-license.org)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/adorade/boodark/node.yml?label=Test%20CI&logo=github)](https://github.com/adorade/boodark/actions/workflows/node.yml)
+
 
 > Bootstrap Dark theme for phpMyAdmin
 
@@ -19,6 +21,7 @@
 - Designer adjusted for dark theme
 - Console adjusted for dark theme
 - Inline SVG using `escape-svg` function
+- Color Schemes: `cyan` (main), `teal`, `nord` and `orange`
 
 ## Demo
 
@@ -70,9 +73,10 @@ To build the theme or customize it with your preferences you must have **Node**,
 
 6. Theme files are in `themes/boodark`.
 
-## Color Scheme
+## Color Schemes
 
-BooDark has several color schemes: _cyan_ (default), _teal_, _nord_ and _orange_. There is currently no way to change the color scheme in GUI.
+BooDark has several color schemes: `cyan` (main), `teal`, `nord` and `orange`.  
+**There is currently no way to change the color scheme in GUI.**
 
 **How to change color scheme?**
 
@@ -83,12 +87,14 @@ Option 1. Edit `scss/_variables.scss` (see [Building](#building))
 // Values: "cyan", "teal", "nord", "orange"
 // Default: "cyan"
 // Set this value for the desired color scheme
-// Change cyan
+
+// --- Change cyan
 $color-scheme: cyan !default;
-// to nord
+
+// --- to nord
 $color-scheme: nord !default;
 
-// then run `yarn run build`
+// --- then run `yarn run build`
 ```
 
 Option 2. Replace the CSS files. For example:
@@ -105,7 +111,7 @@ Have a bug or a feature request? Please search for existing and closed issues. I
 ## License
 
 BooDark Theme is licensed under [MIT](LICENSE).  
-Copyright (c) 2022 - 2023 [Adorade](https://github.com/adorade)
+Copyright (c) 2022-23 [Adorade](https://github.com/adorade)
 
 ## Thanks for use
 

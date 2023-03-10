@@ -1,6 +1,6 @@
 {
   "name": "boodark",
-  "version": "1.1.0-beta",
+  "version": "1.1.0",
   "description": "Bootstrap Dark theme for phpMyAdmin",
   "repository": "https://github.com/adorade/boodark.git",
   "author": "Adorade",
@@ -15,7 +15,6 @@
     "css-rtl": "rtlcss -c .rtlcssrc.json themes/boodark/css/theme.css"
   },
   "dependencies": {
-    "@popperjs/core": "2.11.6",
     "autoprefixer": "10.4.13",
     "bootstrap": "5.2.3",
     "postcss": "8.4.21",
