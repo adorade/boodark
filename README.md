@@ -6,7 +6,6 @@
 [![license](https://img.shields.io/github/license/adorade/boodark)](https://mit-license.org)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/adorade/boodark/node.yml?label=Test%20CI&logo=github)](https://github.com/adorade/boodark/actions/workflows/node.yml)
 
-
 > Bootstrap Dark theme for phpMyAdmin
 
 - Supported versions: 5.2
@@ -106,7 +105,8 @@ mv themes/boodark/css/theme-nord.css themes/boodark/css/theme.css
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/adorade/boodark/issues/new).
+Have a bug or a feature request? Please search for existing and closed issues.
+If your problem or idea is not addressed yet, [please open a new issue](https://github.com/adorade/boodark/issues/new).
 
 ## License
 
