@@ -32,7 +32,7 @@ The best way to see **BooDark** in action is to try it on **phpMyAdmin** demo se
 
 ## Installation
 
-1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.0.3.zip)
+1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.1.0.zip)
 2. Extract the archive files
 3. Go to the phpMyAdmin files (C:\xampp\phpmyadmin for XAMPP) then go to the `themes` folder and add here the `boodark` folder
 4. Select `BooDark` theme on the home page
@@ -67,7 +67,7 @@ To build the theme or customize it with your preferences you must have **Node**,
     # production, minified files
     yarn run build
     # development
-    yarn run css-dev
+    yarn run build:dev
     ```
 
 6. Theme files are in `themes/boodark`.
