@@ -24,4 +24,4 @@ Thumbs.db
 /archive/
 /node_modules/
 /public/build/
-/themes/**
+/themes/

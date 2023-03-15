@@ -17,7 +17,7 @@
     "@babel/runtime": "7.21.0",
     "@popperjs/core": "2.11.6",
     "autoprefixer": "10.4.14",
-    "bootstrap": "5.2.3",
+    "bootstrap": "5.3.0-alpha1",
     "css-loader": "6.7.3",
     "css-minimizer-webpack-plugin": "4.2.2",
     "mini-css-extract-plugin": "2.7.3",
