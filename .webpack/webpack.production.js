@@ -16,7 +16,7 @@ exports.productionConfig = () => ({
   },
   performance: {
     hints: 'warning',
-    maxAssetSize: 285000,
-    maxEntrypointSize: 570000,
+    maxAssetSize: 310000,
+    maxEntrypointSize: 620000,
   },
 });
