@@ -3,7 +3,7 @@ name: Node CI
 
 on:
   push:
-    branches: [main, v1-dev]
+    branches: [main, v1-dev, v2-dev]
   pull_request:
     branches: [main]
 

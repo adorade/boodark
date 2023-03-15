@@ -1,0 +1,17 @@
+// Navs
+
+.nav {
+  // code here
+}
+
+.nav-tabs {
+  background-color: $nav-tabs-bg;
+}
+
+.nav-pills {
+  .nav-link.active {
+    .icon {
+      filter: brightness(0) invert(0);
+    }
+  }
+}

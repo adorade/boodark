@@ -2,7 +2,7 @@ const path = require('path');
 const { merge } = require('webpack-merge');
 const { extractScss } = require('./webpack.parts.js');
 
-const themePath = path.resolve(__dirname, '../themes/boodark');
+const themePath = path.resolve(__dirname, '../public/themes/boodark');
 
 exports.commonConfig = ({ mode }) => (
   merge(

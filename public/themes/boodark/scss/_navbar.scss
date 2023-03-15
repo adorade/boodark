@@ -1,0 +1,41 @@
+// Navbar
+
+.navbar-toggler {
+  border: none;
+  transition: none;
+
+  &:focus {
+    box-shadow: none;
+    background-color: $navbar-light-toggler-focus-bg;
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-item.active {
+      @include button-variant($component-active-bg, $component-active-bg);
+      color: var(--bs-btn-color);
+      background-color: var(--bs-btn-bg);
+      border-top-left-radius: $nav-item-border-radius;
+      border-top-right-radius: $nav-item-border-radius;
+
+      &:first-child {
+        border-top-left-radius: 0;
+      }
+
+      .nav-link {
+        color: var(--bs-btn-color);
+      }
+
+      .icon {
+        filter: brightness(0) invert(0);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .navbar-collapse {
+    overflow: hidden !important;
+  }
+}

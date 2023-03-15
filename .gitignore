@@ -3,7 +3,7 @@
 .todo
 desktop.ini
 *_*.ico
-themes/boodark/scss/__debug.scss
+public/themes/boodark/scss/__debug.scss
 
 # OS or Editor folders
 ._*
@@ -23,4 +23,5 @@ Thumbs.db
 # Folders to ignore
 /archive/
 /node_modules/
-/build/
+/public/build/
+/themes/**
