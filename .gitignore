@@ -25,3 +25,4 @@ Thumbs.db
 /node_modules/
 /public/build/
 /themes/
+themes/boodark/scss/__debug.scss
