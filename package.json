@@ -11,7 +11,7 @@
     "build:dev": "webpack --progress --mode=development",
     "build:prod": "webpack --progress --mode=production",
     "watch": "webpack --progress --watch --mode=development",
-    "css:lint": "stylelint 'public/themes/boodark/scss/*.scss'"
+    "scss:lint": "stylelint 'public/themes/boodark/scss/*.scss'"
   },
   "dependencies": {
     "@babel/runtime": "7.21.0",

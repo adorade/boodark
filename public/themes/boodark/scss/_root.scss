@@ -1,7 +1,83 @@
 // Root
 
+@mixin button-css-variables($color) {
+  --pma-btn-color: #{color-contrast($color)};
+  --pma-btn-bg: var(--pma-color-scheme);
+  --pma-btn-border-color: var(--pma-color-scheme);
+  --pma-btn-hover-color: #{color-contrast(tint-color($color, $btn-hover-bg-tint-amount))};
+  --pma-btn-hover-bg: #{tint-color($color, $btn-hover-bg-tint-amount)};
+  --pma-btn-hover-border-color: #{tint-color($color, $btn-hover-border-tint-amount)};
+  --pma-btn-focus-shadow-rgb: #{to-rgb(mix(color-contrast($color), $color, 15%))};
+  --pma-btn-active-color: #{color-contrast(tint-color($color, $btn-hover-bg-tint-amount))};
+  --pma-btn-active-bg: #{tint-color($color, $btn-active-bg-tint-amount)};
+  --pma-btn-active-border-color: #{tint-color($color, $btn-active-border-tint-amount)};
+  --pma-btn-disabled-color: #{color-contrast($color)};
+  --pma-btn-disabled-bg: var(--pma-color-scheme);
+  --pma-btn-disabled-border-color: var(--pma-color-scheme);
+}
+
 :root {
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  color-scheme: dark;
+
+  --#{$prefix}primary-text: #{$primary-text-dark};
+  --#{$prefix}secondary-text: #{$secondary-text-dark};
+  --#{$prefix}success-text: #{$success-text-dark};
+  --#{$prefix}info-text: #{$info-text-dark};
+  --#{$prefix}warning-text: #{$warning-text-dark};
+  --#{$prefix}danger-text: #{$danger-text-dark};
+  --#{$prefix}light-text: #{$light-text-dark};
+  --#{$prefix}dark-text: #{$dark-text-dark};
+
+  --#{$prefix}primary-bg-subtle: #{$primary-bg-subtle-dark};
+  --#{$prefix}secondary-bg-subtle: #{$secondary-bg-subtle-dark};
+  --#{$prefix}success-bg-subtle: #{$success-bg-subtle-dark};
+  --#{$prefix}info-bg-subtle: #{$info-bg-subtle-dark};
+  --#{$prefix}warning-bg-subtle: #{$warning-bg-subtle-dark};
+  --#{$prefix}danger-bg-subtle: #{$danger-bg-subtle-dark};
+  --#{$prefix}light-bg-subtle: #{$light-bg-subtle-dark};
+  --#{$prefix}dark-bg-subtle: #{$dark-bg-subtle-dark};
+
+  --#{$prefix}primary-border-subtle: #{$primary-border-subtle-dark};
+  --#{$prefix}secondary-border-subtle: #{$secondary-border-subtle-dark};
+  --#{$prefix}success-border-subtle: #{$success-border-subtle-dark};
+  --#{$prefix}info-border-subtle: #{$info-border-subtle-dark};
+  --#{$prefix}warning-border-subtle: #{$warning-border-subtle-dark};
+  --#{$prefix}danger-border-subtle: #{$danger-border-subtle-dark};
+  --#{$prefix}light-border-subtle: #{$light-border-subtle-dark};
+  --#{$prefix}dark-border-subtle: #{$dark-border-subtle-dark};
+}
+
+// Theme color scheme
+// Values: "cyan" (default), "teal", "nord", "orange"
+:root,
+[data-bs-theme="cyan"] {
+  --pma-color-scheme: #{$pma-cyan};
+  --pma-color-scheme-rgb: #{to-rgb($pma-cyan)};
+
+  @include button-css-variables($pma-cyan);
+  --pma-input-focus-border-color: #{tint-color($pma-cyan, 50%)};
+}
+
+[data-bs-theme="teal"] {
+  --pma-color-scheme: #{$pma-teal};
+  --pma-color-scheme-rgb: #{to-rgb($pma-teal)};
+
+  @include button-css-variables($pma-teal);
+  --pma-input-focus-border-color: #{tint-color($pma-teal, 50%)};
+}
+
+[data-bs-theme="nord"] {
+  --pma-color-scheme: #{$pma-nord};
+  --pma-color-scheme-rgb: #{to-rgb($pma-nord)};
+
+  @include button-css-variables($pma-nord);
+  --pma-input-focus-border-color: #{tint-color($pma-nord, 50%)};
+}
+
+[data-bs-theme="orange"] {
+  --pma-color-scheme: #{$pma-orange};
+  --pma-color-scheme-rgb: #{to-rgb($pma-orange)};
+
+  @include button-css-variables($pma-orange);
+  --pma-input-focus-border-color: #{tint-color($pma-orange, 50%)};
 }

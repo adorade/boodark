@@ -1,4 +1,9 @@
+// stylelint-disable scss/at-extend-no-missing-placeholder
 // Navbar
+
+.navbar {
+  @extend .bg-light;
+}
 
 .navbar-toggler {
   border: none;
@@ -10,26 +15,22 @@
   }
 }
 
-.navbar-light {
-  .navbar-nav {
-    .nav-item.active {
-      @include button-variant($component-active-bg, $component-active-bg);
-      color: var(--bs-btn-color);
-      background-color: var(--bs-btn-bg);
-      border-top-left-radius: $nav-item-border-radius;
-      border-top-right-radius: $nav-item-border-radius;
+.navbar-nav {
+  .nav-item.active {
+    background-color: var(--pma-color-scheme);
+    border-radius: $nav-item-border-radius;
 
-      &:first-child {
-        border-top-left-radius: 0;
-      }
+    &:first-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
 
-      .nav-link {
-        color: var(--bs-btn-color);
-      }
+    .nav-link {
+      color: $black;
+    }
 
-      .icon {
-        filter: brightness(0) invert(0);
-      }
+    .icon {
+      filter: brightness(0) invert(0);
     }
   }
 }

@@ -3,7 +3,7 @@
 // =============================================================================
 
 // Theme version
-$pma-theme-version: "1.1.0";
+$pma-theme-version: "2.0.0-dev";
 
 // PMA color system
 // -----------------------------------------------------------------------------
@@ -39,7 +39,7 @@ $pma-teal:          #20c997;
 $pma-cyan:          #0dcaf0;
 $pma-nord:          #88c0d0;
 
-// Theme Colors
+// Theme Colors - for cheatsheet
 $pma-theme-colors: (
   "white":    $white,
   "black":    $black,
@@ -66,29 +66,18 @@ $pma-theme-colors: (
 );
 
 // Theme color scheme
-// Values: "cyan", "teal", "nord", "orange"
-// Default: "cyan"
-// Set this value for the desired color scheme
-$color-scheme: cyan !default;
-$pma-color-scheme: $pma-cyan;
-
-@if $color-scheme == teal {
-  $pma-color-scheme: $pma-teal;
-} @else if $color-scheme == nord {
-  $pma-color-scheme: $pma-nord;
-} @else if $color-scheme == orange {
-  $pma-color-scheme: $pma-orange;
-}
+// see _root.scss
+// var(--pma-color-scheme);
 
 // PMA Base Style
 // -----------------------------------------------------------------------------
-$pma-primary:                 $pma-color-scheme;
+$pma-primary:                 $pma-cyan;
 $pma-body-color:              $white;
 $pma-body-bg:                 $pma-gray-900;
 $pma-component-bg:            $pma-gray-800;
 $pma-component-hover-bg:      $pma-gray-600;
 $pma-component-active-color:  $black;
-$pma-component-active-bg:     $pma-primary;
+$pma-component-active-bg:     var(--pma-color-scheme);
 $pma-table-bg:                $pma-gray-700;
 $pma-form-border-color:       $pma-gray-900;
 $pma-selected-bg:             $pma-gray-700;
@@ -97,8 +86,8 @@ $pma-fieldset-bg:             $pma-gray-600;
 $pma-border-color:            $pma-gray-600;
 $pma-disable-color:           $pma-gray-500;
 $pma-cond-border-color:       $black;
-$pma-button-color:            $pma-primary;
-$pma-link-color:              $pma-primary;
+$pma-button-color:            var(--pma-color-scheme);
+$pma-link-color:              var(--pma-color-scheme);
 $pma-link-hover-color:        $pma-red;
 $pma-custom-color:            $pma-orange;
 
@@ -142,17 +131,21 @@ $table-group-separator-color: $pma-border-color;
 // Buttons + Forms
 // Buttons
 // Forms
-$input-bg:                    darken($pma-component-bg, 2.5%);
-$input-disabled-bg:           $pma-gray-600;
-$input-border-color:          $pma-form-border-color;
-$input-placeholder-color:     $pma-gray-400;
-$input-group-addon-bg:        $pma-component-bg;
-$form-check-input-border:     1px solid rgba($pma-body-color, .4);
-$form-select-indicator-color: $pma-body-color;
-$form-switch-color:           rgba($pma-body-color, .75);
-$form-file-button-color:      color-contrast($pma-gray-900);
-$form-file-button-bg:         $pma-gray-900;
-$form-file-button-hover-bg:   $pma-primary;
+$input-bg:                              darken($pma-component-bg, 2.5%);
+$input-disabled-bg:                     $pma-gray-600;
+$input-border-color:                    $pma-form-border-color;
+$input-placeholder-color:               $pma-gray-400;
+$input-group-addon-bg:                  $pma-component-bg;
+$input-focus-border-color:              var(--pma-input-focus-border-color);
+$input-btn-focus-color:                 rgba(var(--pma-color-scheme-rgb), .25);
+$form-check-input-border:               1px solid rgba($pma-body-color, .4);
+$form-select-indicator-color:           $pma-body-color;
+$form-switch-color:                     rgba($pma-body-color, .75);
+$form-file-button-color:                color-contrast($pma-gray-900);
+$form-file-button-bg:                   $pma-gray-900;
+$form-file-button-hover-bg:             var(--pma-color-scheme);
+$form-check-input-checked-bg-color:     var(--pma-color-scheme);
+$form-check-input-checked-border-color: var(--pma-color-scheme);
 // Form validation
 // Z-index master list
 // Nav Tabs
@@ -243,8 +236,8 @@ $btn-close-color:             $pma-body-color;
 // -----------------------------------------------------------------------------
 
 // Common
-$pma-ajax-shadow:             #888;
-$pma-ajax-spacer:             8px;
+$pma-ajax-shadow:             $pma-gray-500;
+$pma-ajax-spacer:             .75rem;
 $pma-ajax-width:              350px;
 $pma-ajax-bg-zise:            24px;
 $pma-confirmation-color:      $black;

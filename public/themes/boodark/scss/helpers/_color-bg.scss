@@ -1,3 +1,4 @@
+// stylelint-disable annotation-no-unknown
 @each $color, $value in $pma-theme-colors {
   .pma-text-bg-#{$color} {
     color: color-contrast($value) if($enable-important-utilities, !important, null);

@@ -366,6 +366,7 @@ body#loginform {
   a.logo {
     display: block;
     text-align: center;
+    color: var(--pma-color-scheme);
   }
 
   div.container {
@@ -985,6 +986,9 @@ table {
 }
 
 .ajax_notification {
+  --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
+  --#{$prefix}alert-border-radius: #{$alert-border-radius};
+
   // The notification needs to be shown on the top of the page
   position: fixed;
   top: 0;
@@ -996,13 +1000,14 @@ table {
   padding: $pma-ajax-spacer;
   margin: 200px auto 0;
   text-align: center;
+  color: $white;
+  background-color: var(--#{$prefix}alert-bg);
   background-size: $pma-ajax-bg-zise;
   background-repeat: no-repeat;
   background-position: $pma-ajax-spacer;
-  border: $alert-border-width solid transparent;
-  border-radius: 5px;
+  border: var(--#{$prefix}alert-border);
+  @include border-radius(var(--#{$prefix}alert-border-radius));
   box-shadow: 0 5px 90px $pma-ajax-shadow;
-
   @extend .alert-info;
   @extend .ic_ajax_spinner;
 }

@@ -145,13 +145,13 @@ input {
 
   &:hover:not(:disabled):not([readonly])::file-selector-button {
     background-color: $form-file-button-hover-bg;
-    color: color-contrast($form-file-button-hover-bg);
+    color: $black;
   }
 }
 
 .form-control {
   &:hover:not(:disabled):not([readonly])::file-selector-button {
-    color: color-contrast($form-file-button-hover-bg);
+    color: $black;
   }
 }
 

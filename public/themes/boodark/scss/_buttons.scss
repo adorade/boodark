@@ -1,5 +1,21 @@
 // Buttons
 
+.btn-primary {
+  --bs-btn-color: var(--pma-btn-color);
+  --bs-btn-bg: var(--pma-btn-bg);
+  --bs-btn-border-color: var(--pma-btn-border-color);
+  --bs-btn-hover-color: var(--pma-btn-hover-color);
+  --bs-btn-hover-bg: var(--pma-btn-hover-bg);
+  --bs-btn-hover-border-color: var(--pma-btn-hover-border-color);
+  --bs-btn-focus-shadow-rgb: var(--pma-btn-focus-shadow-rgb);
+  --bs-btn-active-color: var(--pma-btn-active-color);
+  --bs-btn-active-bg: var(--pma-btn-active-bg);
+  --bs-btn-active-border-color: var(--pma-btn-active-border-color);
+  --bs-btn-disabled-color: var(--pma-btn-disabled-color);
+  --bs-btn-disabled-bg: var(--pma-btn-disabled-bg);
+  --bs-btn-disabled-border-color: var(--pma-btn-disabled-border-color);
+}
+
 .btn-outline-secondary {
   @include button-variant($dark, $dark);
 }

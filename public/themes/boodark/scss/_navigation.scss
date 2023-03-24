@@ -392,6 +392,9 @@ li.fast_filter {
   font-size: 0;
   cursor: pointer;
   @extend .ic_chevron-left;
+  -webkit-mask-size: 1.25rem;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 
   &[title="Show panel"] {
     @extend .ic_chevron-right;
