@@ -1,6 +1,6 @@
 # BooDark
 
-![Screenshot](themes/boodark/screen.png)
+![Screenshot](themes/boodark/screen-animated.png)
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/adorade/boodark?color=green&logo=github)](https://github.com/adorade/boodark/blob/main/package.json)
 [![license](https://img.shields.io/github/license/adorade/boodark)](https://mit-license.org)
