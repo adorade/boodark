@@ -1540,6 +1540,10 @@ div.navigation_separator {
     padding: 0;
   }
 
+  input {
+    @extend .form-control;
+  }
+
   .edit_area {
     background: $pma-component-bg;
     border: 1px solid $pma-border-color;
@@ -1555,12 +1559,9 @@ div.navigation_separator {
   .edit_box {
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 0;
-    margin: 0;
   }
 
   .edit_box_posting {
-    // background: $white url('../img/ajax_clock_small.gif') no-repeat right center;
     padding-right: 1.5rem;
     background-color: $pma-component-bg;
     background-size: $pma-ajax-bg-zise;
@@ -1570,7 +1571,6 @@ div.navigation_separator {
   }
 
   .edit_area_loading {
-    // background: $white url("../img/ajax_clock_small.gif") no-repeat center;
     height: 6rem;
     border: 1px solid #6c757d;
     background-color: $pma-component-bg;
@@ -1590,7 +1590,6 @@ div.navigation_separator {
 }
 
 .saving_edited_data {
-  // background: url('../img/ajax_clock_small.gif') no-repeat left;
   padding-left: 20px;
   background-size: $pma-ajax-bg-zise;
   background-repeat: no-repeat;
