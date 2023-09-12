@@ -170,6 +170,7 @@ select {
 textarea {
   background-color: $input-bg;
   border: $input-border-width solid $input-border-color;
+  resize: both;
 
   &:focus {
     color: $input-focus-color;
