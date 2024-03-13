@@ -5,19 +5,20 @@
   "repository": "https://github.com/adorade/boodark.git",
   "author": "Adorade",
   "scripts": {
-    "postinstall": "yarn run build",
     "build": "yarn run build:prod",
     "build:analyze": "webpack --progress --mode=production --analyze",
     "build:dev": "webpack --progress --mode=development",
     "build:prod": "webpack --progress --mode=production",
     "watch": "webpack --progress --watch --mode=development",
-    "css:lint": "stylelint 'themes/boodark/scss/*.scss'"
+    "scss:lint": "stylelint 'themes/boodark/scss/*.scss'"
   },
   "dependencies": {
-    "@babel/runtime": "7.24.0",
     "@popperjs/core": "2.11.8",
+    "bootstrap": "5.2.3"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.24.0",
     "autoprefixer": "10.4.18",
-    "bootstrap": "5.2.3",
     "css-loader": "6.10.0",
     "css-minimizer-webpack-plugin": "6.0.0",
     "mini-css-extract-plugin": "2.8.1",
@@ -27,13 +28,11 @@
     "rtlcss-webpack-plugin": "4.0.7",
     "sass": "1.64.2",
     "sass-loader": "14.1.1",
+    "stylelint": "16.2.1",
+    "stylelint-config-standard-scss": "13.0.0",
     "webpack": "5.90.3",
     "webpack-cli": "5.1.4",
     "webpack-merge": "5.10.0"
-  },
-  "devDependencies": {
-    "stylelint": "16.2.1",
-    "stylelint-config-standard-scss": "13.0.0"
   },
   "engines": {
     "node": ">=18.12.0"
