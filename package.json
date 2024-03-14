@@ -6,7 +6,6 @@
   "author": "Adorade",
   "scripts": {
     "build": "yarn run build:prod",
-    "build:analyze": "webpack --progress --mode=production --analyze",
     "build:dev": "webpack --progress --mode=development",
     "build:prod": "webpack --progress --mode=production",
     "watch": "webpack --progress --watch --mode=development",
