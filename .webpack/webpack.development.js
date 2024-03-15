@@ -1,3 +1,3 @@
 exports.developmentConfig = () => ({
-  name: 'CSS development',
+  name: 'CSS Development',
 });
