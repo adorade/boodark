@@ -111,7 +111,7 @@ If your problem or idea is not addressed yet, [please open a new issue](https://
 ## License
 
 BooDark Theme is licensed under [MIT](LICENSE).  
-Copyright (c) 2022-23 [Adorade](https://github.com/adorade)
+Copyright (c) 2022-24 [Adorade](https://github.com/adorade)
 
 ## Thanks for use
 
