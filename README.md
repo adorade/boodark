@@ -5,6 +5,7 @@
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/adorade/boodark?color=green&logo=github)](https://github.com/adorade/boodark/blob/main/package.json)
 [![license](https://img.shields.io/github/license/adorade/boodark)](https://mit-license.org)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/adorade/boodark/node.yml?label=Test%20CI&logo=github)](https://github.com/adorade/boodark/actions/workflows/node.yml)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/adorade/boodark/total)](https://github.com/adorade/boodark/releases)
 
 > Bootstrap Dark theme for phpMyAdmin
 
