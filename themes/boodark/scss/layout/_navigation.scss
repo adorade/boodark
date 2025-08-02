@@ -40,8 +40,8 @@
   }
 
   #pmalogo,
-  #serverChoice,
   #navipanellinks,
+  #serverChoice,
   #recentTableList,
   #favoriteTableList,
   #databaseList,
@@ -64,6 +64,19 @@
     a {
       display: inline-block;
       padding: 8px;
+    }
+  }
+
+  #serverChoice {
+    #list_server {
+      li {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+          color: $pma-cyan;
+        }
+      }
     }
   }
 
