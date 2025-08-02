@@ -1,4 +1,3 @@
 exports.developmentConfig = () => ({
-  name: 'CSS development',
-  // devtool: 'source-map',
+  name: 'CSS Development',
 });

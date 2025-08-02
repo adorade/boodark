@@ -29,6 +29,14 @@ jobs:
       with:
         node-version: ${{ matrix.node }}
 
-    # install dependencies and build
-    - name: Install deps and build
+    # install dependencies
+    - name: Install deps
       run: yarn install
+
+    # lint `scss` files
+    - name: Lint files
+      run: yarn run scss:lint
+
+    # build proccess
+    - name: Build proccess
+      run: yarn run build

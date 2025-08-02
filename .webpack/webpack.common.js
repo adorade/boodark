@@ -18,6 +18,7 @@ exports.commonConfig = ({ mode }) => (
       output: {
         filename: '../../../build/[name].js',
         path: themePath + '/css',
+        clean: true
       },
     },
     extractScss(),
