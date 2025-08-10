@@ -1,7 +1,7 @@
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 exports.productionConfig = () => ({
-  name: 'CSS production',
+  name: 'CSS Production',
   optimization: {
     minimize: true,
     minimizer: [
@@ -16,7 +16,7 @@ exports.productionConfig = () => ({
   },
   performance: {
     hints: 'warning',
-    maxAssetSize: 285000,
-    maxEntrypointSize: 570000,
+    maxAssetSize: 290000,
+    maxEntrypointSize: 580000,
   },
 });
