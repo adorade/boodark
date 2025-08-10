@@ -11,14 +11,14 @@ $pma-theme-version: "1.2.0-dev";
 // Values: "cyan", "teal", "nord", "orange"
 // Default: "cyan"
 // Set this value for the desired color scheme
-$color-scheme: 'cyan' !default;
+$color-scheme: "cyan" !default;
 $pma-color-scheme: $pma-cyan;
 
-@if $color-scheme == 'teal' {
+@if $color-scheme == "teal" {
   $pma-color-scheme: $pma-teal;
-} @else if $color-scheme == 'nord' {
+} @else if $color-scheme == "nord" {
   $pma-color-scheme: $pma-nord;
-} @else if $color-scheme == 'orange' {
+} @else if $color-scheme == "orange" {
   $pma-color-scheme: $pma-orange;
 }
 

@@ -9,7 +9,8 @@
     "build:dev": "webpack --progress --mode=development",
     "build:prod": "webpack --progress --mode=production",
     "watch": "webpack --progress --watch --mode=development",
-    "scss:lint": "stylelint 'themes/boodark/scss/*.scss'"
+    "scss:lint": "stylelint 'themes/boodark/scss/**/*.scss'",
+    "scss:fix": "stylelint 'themes/boodark/scss/**/*.scss' --fix"
   },
   "dependencies": {
     "@popperjs/core": "2.11.8",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@smushytaco/rtlcss-webpack-plugin": "2.0.5",
+    "@stylistic/stylelint-config": "3.0.1",
     "autoprefixer": "10.4.21",
     "css-loader": "7.1.2",
     "css-minimizer-webpack-plugin": "7.0.2",
@@ -27,7 +29,9 @@
     "sass-embedded": "1.90.0",
     "sass-loader": "16.0.5",
     "stylelint": "16.23.1",
+    "stylelint-config-recess-order": "7.1.0",
     "stylelint-config-standard-scss": "15.0.1",
+    "stylelint-order": "7.0.0",
     "webpack": "5.101.0",
     "webpack-cli": "6.0.1",
     "webpack-merge": "6.0.1"

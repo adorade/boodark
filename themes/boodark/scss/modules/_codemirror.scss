@@ -5,18 +5,18 @@ $textarea-rows: 15;
 
 .CodeMirror {
   height: 20rem;
-  direction: ltr;
   color: $codemirror-color;
   background-color: $body-bg;
   border: $card-border-width solid $pma-component-bg;
+  direction: ltr;
 
   @include border-radius($card-border-radius);
 
   &-lines { background-color: #20272b; }
 
   &-gutters {
-    border-right: 1px solid $codemirror-gutters;
     background-color: $codemirror-gutters;
+    border-right: 1px solid $codemirror-gutters;
   }
   &-linenumber { color: #6d8a88; }
   &-guttermarker { color: white; }
@@ -24,19 +24,19 @@ $textarea-rows: 15;
 
   &-cursor { border-left: 1px solid $codemirror-color; }
 
-  &-selected { background: rgba(255, 255, 255, 0.1); }
+  &-selected { background: rgba(255, 255, 255, .1); }
   .CodeMirror-line::selection,
   .CodeMirror-line > span::selection,
   .CodeMirror-line > span > span::selection {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, .1);
   }
 
   &-hint { color: $codemirror-color; }
 
   &-hints {
+    z-index: 1999;
     color: $codemirror-color;
     background: $codemirror-bg;
-    z-index: 1999;
   }
 
   &-lint-tooltip {
@@ -55,8 +55,8 @@ $textarea-rows: 15;
 }
 
 .insertRowTable .CodeMirror {
-  min-height: ceil($textarea-rows * .6em);
   min-width: ceil($textarea-cols * .6em);
+  min-height: ceil($textarea-rows * .6em);
   border: 1px solid #a9a9a9;
 }
 
@@ -95,10 +95,10 @@ $textarea-rows: 15;
   .cm-link { color: #00c; }
   .cm-error { color: #f00; }
 
-  .CodeMirror-activeline-background { background: rgba(255,255,255,0.1); }
+  .CodeMirror-activeline-background { background: rgba(255, 255, 255, .1); }
   .CodeMirror-matchingbracket {
-    text-decoration: underline;
     color: #fff !important;
+    text-decoration: underline;
   }
 }
 
@@ -107,8 +107,8 @@ $textarea-rows: 15;
 }
 
 .autocomplete-column-hint {
-  display: inline-block;
   float: right;
-  color: #666;
+  display: inline-block;
   margin-left: 1em;
+  color: #666;
 }
