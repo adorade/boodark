@@ -995,15 +995,16 @@ table {
   width: $pma-ajax-width;
   padding: $pma-ajax-spacer;
   margin: 200px auto 0;
-  text-align: center;
+  color: $pma-ajax-color;
+  background-color: $pma-ajax-bg;
   background-size: $pma-ajax-bg-zise;
   background-repeat: no-repeat;
   background-position: $pma-ajax-spacer;
-  border: $alert-border-width solid transparent;
+  border: $alert-border-width solid $pma-ajax-border-color;
   border-radius: 5px;
-  box-shadow: 0 5px 90px $pma-ajax-shadow;
+  text-align: center;
+  box-shadow: 0 5px 90px $pma-ajax-shadow-color;
 
-  @extend .alert-info;
   @extend .ic_ajax_spinner;
 }
 

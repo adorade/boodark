@@ -185,10 +185,14 @@ $btn-close-color:             $pma-body-color;
 // -----------------------------------------------------------------------------
 
 // Common
-$pma-ajax-shadow:             #888;
-$pma-ajax-spacer:             8px;
+// inherit alert-info => data-bs-theme=dark
+$pma-ajax-color:              #6edff6; // --bs-alert-color
+$pma-ajax-bg:                 #032830; // --bs-alert-bg
+$pma-ajax-border-color:       #087990; // --bs-alert-border-color
+$pma-ajax-spacer:             .5rem;
 $pma-ajax-width:              350px;
-$pma-ajax-bg-zise:            24px;
+$pma-ajax-bg-zise:            1.5rem;
+$pma-ajax-shadow-color:       #888;
 $pma-confirmation-color:      $black;
 $pma-confirmation-bg:         $pma-pink;
 $selflink-border-color:       $pma-border-color;
