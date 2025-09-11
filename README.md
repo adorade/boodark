@@ -10,7 +10,7 @@
 > Bootstrap Dark theme for phpMyAdmin
 
 - Supported versions: 5.2
-- Bootstrap v5.2.3
+- Bootstrap v5.3.8
 
 ## Changes
 
@@ -25,7 +25,7 @@
 
 ## Installation
 
-1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.1.1.zip)
+1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.2.0.zip)
 2. Extract the archive files
 3. Go to the `phpMyAdmin/themes` and add the `boodark` folder
 4. Select `BooDark` theme on the home page
