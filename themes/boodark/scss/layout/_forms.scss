@@ -52,12 +52,12 @@ input {
     margin-top: ($line-height-base - $form-check-input-width) * .75;
     vertical-align: top;
     appearance: none;
+    print-color-adjust: exact; // Keep themed appearance for print
     background-color: $form-check-input-bg;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     border: $form-check-input-border;
-    print-color-adjust: exact; // Keep themed appearance for print
 
     &:active {
       filter: $form-check-input-active-filter;

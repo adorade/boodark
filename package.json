@@ -2,8 +2,16 @@
   "name": "boodark",
   "version": "1.2.0-dev",
   "description": "Bootstrap Dark theme for phpMyAdmin",
-  "repository": "https://github.com/adorade/boodark.git",
-  "author": "Adorade",
+  "homepage": "https://github.com/adorade/boodark",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adorade/boodark.git"
+  },
+  "author": {
+    "name": "Adorade",
+    "email": "adorade@outlook.com",
+    "url": "https://adorade.ro"
+  },
   "scripts": {
     "build": "yarn run build:prod",
     "build:dev": "webpack --progress --mode=development",
@@ -14,7 +22,7 @@
   },
   "dependencies": {
     "@popperjs/core": "2.11.8",
-    "bootstrap": "5.3.7"
+    "bootstrap": "5.3.8"
   },
   "devDependencies": {
     "@smushytaco/rtlcss-webpack-plugin": "2.0.5",
@@ -22,17 +30,17 @@
     "autoprefixer": "10.4.21",
     "css-loader": "7.1.2",
     "css-minimizer-webpack-plugin": "7.0.2",
-    "mini-css-extract-plugin": "2.9.3",
+    "mini-css-extract-plugin": "2.9.4",
     "postcss": "8.5.6",
-    "postcss-loader": "8.1.1",
+    "postcss-loader": "8.2.0",
     "rtlcss": "4.3.0",
-    "sass-embedded": "1.90.0",
+    "sass-embedded": "1.92.1",
     "sass-loader": "16.0.5",
-    "stylelint": "16.23.1",
-    "stylelint-config-recess-order": "7.1.0",
+    "stylelint": "16.24.0",
+    "stylelint-config-recess-order": "7.3.0",
     "stylelint-config-standard-scss": "15.0.1",
     "stylelint-order": "7.0.0",
-    "webpack": "5.101.0",
+    "webpack": "5.101.3",
     "webpack-cli": "6.0.1",
     "webpack-merge": "6.0.1"
   },
