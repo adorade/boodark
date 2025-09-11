@@ -1,6 +1,6 @@
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const RtlCssPlugin = require('rtlcss-webpack-plugin');
+const RtlCssPlugin = require('@smushytaco/rtlcss-webpack-plugin');
 
 exports.extractScss = () => ({
   module: {
@@ -19,7 +19,17 @@ exports.extractScss = () => ({
             },
           }},
           // Loads a SASS/SCSS file and compiles it to CSS
-          { loader: 'sass-loader' },
+          { loader: 'sass-loader', options: {
+            sassOptions: {
+              // If set to true, Sass won’t print warnings that are caused by dependencies (like bootstrap):
+              // https://sass-lang.com/documentation/js-api/interfaces/options/#quietDeps
+              quietDeps: true,
+              silenceDeprecations: [
+                'import', 'color-functions', 'global-builtin',
+                // 'mixed-decls', 'abs-percent',
+              ],
+            },
+          }},
         ],
       },
     ],
