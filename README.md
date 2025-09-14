@@ -23,6 +23,14 @@
 - Inline SVG using `escape-svg` function
 - Color Schemes: `cyan` (main), `teal`, `nord` and `orange`
 
+## Demo
+
+The best way to see **BooDark** in action is to try it on **phpMyAdmin** demo server.
+
+- Navigate to [phpMyAdmin demo server](https://demo.phpmyadmin.net/QA_5_2/)
+- Login is root with empty password
+- Go to **Appearance settings > Themes** and choose **BooDark**.
+
 ## Installation
 
 1. Download latest [release](https://github.com/adorade/boodark/releases/latest/download/boodark-v1.2.0.zip)
