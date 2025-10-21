@@ -109,6 +109,10 @@ mv themes/boodark/css/theme-nord.css themes/boodark/css/theme.css
 Have a bug or a feature request? Please search for existing and closed issues.
 If your problem or idea is not addressed yet, [please open a new issue](https://github.com/adorade/boodark/issues/new).
 
+## Cheatsheet
+
+In order to check the UI elements more easily, a cheatsheet containing the phpMyadmin UI can be found at [BooDark Cheatsheet](https://adorade.github.io/boodark/docs/) (WIP).
+
 ## License
 
 BooDark Theme is licensed under [MIT](LICENSE).  
